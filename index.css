@@ -1,0 +1,1939 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;    
+}
+
+body{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.Headers{    
+    background-color: #ffffff;
+   top: 0;
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;  
+   height: 80px;
+}
+.Header_Links{        
+    display: flex;
+    justify-content: center;   
+    gap: 80px;
+    align-items: center;    
+    margin-right: 90px;    
+}
+.Logo_favicon{
+    margin-left: 90px;
+}
+.Header_Links_Mob{
+    display: none;
+}
+.Hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width:1025px) {
+    .Header_Links{
+        display: flex;
+        justify-content: center;   
+        gap: 40px;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .Logo_favicon{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:769px) {
+    .Header_Links{
+        display: none;
+    }
+    .Header_Links_Mob{    
+        z-index: 1000000px;          
+        transition: 0.5s;   
+        border-top-right-radius: 20px;        
+        border-bottom-right-radius: 20px;
+        transform: translateX(-100%);
+        height: 300px;
+        color: white;        
+        width: 500px;
+        top: 80px;        
+        position: absolute;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f05454;   
+        gap: 20px;     
+    }
+    .Header_Links_Mob.active{
+        z-index: -1000000;
+        transition: 0.5s;   
+        border-top-right-radius: 20px;        
+        border-bottom-right-radius: 20px;                
+        transform: translateX(0px);
+        height: 300px;
+        color: white;        
+        width: 500px;
+        top: 80px;        
+        position: absolute;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f05454;   
+        border: 1px solid #EAEBF0; 
+        gap: 20px;       
+    }
+    .Hamburger{                     
+        transition: 0.3s;
+        display: block;
+        position: relative;        
+        margin-right: 70px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;        
+    }
+    .Hamburger::before{          
+        transition: 0.3s;      
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        left: 0px;
+        position: absolute;
+        content:' ';
+        top: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger::after{        
+        transition: 0.3s;
+        left: 0px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: absolute;
+        content:' ';
+        bottom: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger.active{        
+        display: block;
+        position: relative;
+        margin-right: 70px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;                
+    }
+    .Hamburger.active::before{           
+        transition: 0.3s;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: absolute;        
+        left: -10px;
+        content:' ';
+        top: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger.active::after{        
+        transition: 0.3s;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: absolute;
+        left: 10px;
+        content:' ';        
+        bottom: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+}
+@media screen and (max-width:426px)  {
+    .Hamburger{
+        transition: 0.3s;
+        display: block;
+        position: relative;
+        margin-right: 30px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;        
+    }
+    .Hamburger.active{
+        margin-right: 30px;
+    }
+    .Logo_favicon{
+        margin-left: 30px;
+    }
+    .Header_Links_Mob.active{        
+        width: 100%;        
+    }
+}
+@media screen and (max-width:376px) {
+    .Header_Links_Mob.active{
+        width: 100%;
+    }
+}
+
+
+/* -------------------Home_Part---------------------- */
+
+.Home_Part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.Home_Part1{    
+    text-align: left;    
+    display: grid;    
+    margin-right: 122px;
+}
+.Home_Part1 h2{    
+    margin-bottom: 0;    
+    font-weight: 700;
+    font-size: 52px;
+    width: 624px;
+}
+.Home_Part1 p{
+    margin-bottom: 16px;    
+    font-weight: 400;
+    font-size: 16px;
+    width: 624px;    
+}
+.Home_Part1 button{
+    color: white;
+    width: 121px;
+    height: 46px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #f05454;
+    border: none;
+    border-radius: 6px;
+}
+@media screen and (max-width:1025px) {
+    .Home_Part1 h2{   
+        display: none;         
+    }
+    .Home_Part1 p{
+        display: none;        
+    }
+    .Home_Part1 button{
+        display: none;     
+    }
+    .Home_Part1{
+        position: absolute;                
+    }
+    .Home_Part img{
+        width: 800px;
+    }
+}
+@media screen and (max-width:769px) {     
+    .Home_Part{        
+        z-index: -50000;  
+        position: relative;       
+        height: 645px;        
+    }
+    .Home_Part1 h2{   
+        display: block;
+    }
+    .Home_Part1 button{
+        display: block;     
+    }
+    .Home_Part div:last-child img{
+        left: 80px;
+        position: relative;
+        width: 600px;
+    }
+    .Home_Part1{        
+        left: 60px;
+        bottom: 500px;        
+    }
+}
+
+@media screen and (max-width:426px){
+    .Home_Part {
+        height: auto;        
+        margin-top: 40px;
+    }
+    .Home_Part div:last-child img{
+        display: none;
+    }
+    .Home_Part1{           
+        width: 400px; 
+        margin: auto;        
+        left: 0;
+        top: 0;
+        position: relative;        
+    }
+    .Home_Part1 h2{         
+        margin-bottom: 24px;      
+        width: 323px;               
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .Home_Part1 p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .Home_Part1{           
+        width: 340px; 
+        margin: auto;        
+        left: 0;
+        top: 0;
+        position: relative;        
+    }
+}
+
+
+
+/* -------------------------------------Why HackIt-------------------------------------- */
+
+.Why_Hackit{       
+    margin-top: 141px;
+    margin-bottom: 141px;
+}
+.Why_Hackit h1{    
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.Why_Hackit .Why_Hackit_desc{                  
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 52px;   
+}
+
+.Why_Hackit_boxe1{    
+    width: 1609px;
+    margin: auto;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;    
+}
+
+.Why_Hackit_boxe1 div{
+    width: 490px;
+    height: 230px;
+    text-align: left;    
+    border: 1px solid #EAEBF0;    
+    padding-left: 32px;
+    padding-top: 24px;
+    border-radius: 5px;
+}
+.Why_Hackit_boxe1 div:last-child{
+    display: none;
+}
+.Why_Hackit_boxe1 div p{        
+    padding-bottom: 8px;
+    width: 425px;    
+}
+.Why_Hackit_boxe1 div img{
+    padding-bottom: 24px;
+    /* width: 425px;     */
+}
+.Why_Hackit_boxe2{
+    margin: auto;
+    width: 1609px;
+    display: flex;
+    justify-content: space-between;
+}
+.Why_Hackit_boxe2 div{
+    text-align: left;
+    padding-left: 32px;
+    padding-top: 24px;
+    width: 760px;
+    height: 230px;    border: 1px solid #EAEBF0;    
+    border-radius: 5px;    
+}
+.Why_Hackit_boxe2 div p{
+    text-align: left;            
+}
+.Why_Hackit_boxe2 div img{
+    padding-bottom: 24px;    
+}
+@media screen and (max-width:1025px) {
+    .Why_Hackit_boxe1 div:last-child{
+        display: block;
+    }
+    .Why_Hackit_boxe2 div:last-child{
+        display: none;
+    }
+    .Why_Hackit_boxe1{     
+        margin: auto;                   
+        margin-bottom: 20px;        
+        display: grid;
+        grid-template-columns: repeat(2,490px);  
+        place-content: center;                      
+        place-items: center;
+        grid-gap: 20px;        
+        width: 100%;        
+    }
+    .Why_Hackit_boxe1 div{
+        width: 400px;
+    }
+    .Why_Hackit_boxe1 div p{
+        width: 350px;
+    }
+    .Why_Hackit_boxe2{
+        width: 100%;        
+    }
+    .Why_Hackit_boxe2 div{
+        width: 910px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:769px) {
+    .Why_Hackit .Why_Hackit_desc{
+        display: none;
+    }
+    .Why_Hackit_boxe1 div{
+        width: 310px;
+        height: 250px;
+    }
+    .Why_Hackit_boxe1 div p{
+         width: 286px;
+    }
+    .Why_Hackit_boxe1{     
+        margin: auto;                   
+        margin-bottom: 20px;        
+        display: grid;
+        grid-template-columns: repeat(2,342px);  
+        place-content: center;                      
+        place-items: center;
+        grid-gap: 20px;        
+        width: 100%;        
+    }
+    .Why_Hackit_boxe2 {
+        width: 100%;        
+    }
+    .Why_Hackit_boxe2 div  {
+        margin: auto;
+        width: 672px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .Why_Hackit {
+        margin-top: 46px;        
+    }
+    .Why_Hackit_boxe1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .Why_Hackit_boxe2{
+        width: 100%;               
+    }
+    .Why_Hackit_boxe2 div {        
+        width: 318px;
+    }
+}
+
+
+
+
+/* ----------------------------SkillSets-------------------------------------- */
+.Our_Customers{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.SkillSets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SkillSets .leftArrow{
+    transform: rotateZ(180deg);    
+}
+.SkillSets button{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 2px #f05454;
+    background-color: transparent;
+}
+.SkillSets button img{
+    width: 20px;
+}
+.SkillSet_Container{    
+    border-radius: 20px;    
+    width: 1500px;    
+    overflow: hidden;        
+}
+.SkillSet_Container_inner{        
+    width: auto;
+    margin-left: 1750px;    
+    gap: 200px;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+}
+.SkillSets .Slogos{
+    width: 200px;
+}
+
+
+/* ---------------------------------------Our Customers------------------------------------------ */
+.Our_Customers_Logo{
+    height: auto;    
+    position: relative;
+    text-align: center;    
+}
+.Our_Customers_Logo h2{   
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    z-index: -10;
+}
+.Our_Customers_Logo p {
+    margin-bottom: 21px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.Our_Customers_Logo .Bubbles img{    
+    border: solid 1px rgb(173, 171, 171);
+    border-radius:50% ;
+    position: absolute;
+    transition: 2s;
+}
+
+.Our_Customers_Logo .Bubbles{ 
+    margin: auto;
+    overflow: hidden;
+    width: 100%;        
+    position: relative;    
+    height: 500px;    
+    z-index: -10;
+}
+
+.Bubbles .Clogo1{      
+    display: flex;  
+    justify-content: center;    
+    top: 45px;
+    left: 134px;
+    height: 146px; 
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;         
+}
+.Bubbles .Clogo2{        
+    width: 113px;
+    top: 219px;
+    left: 94px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo3{    
+    width: 113px;
+    top: 173px;
+    left: 283px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo4{
+    width: 152px;    
+    top: 336px;
+    left: 244px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo5 {        
+    width: 108px;
+    top: 290px;
+    left: 433px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo6{    
+    width: 113px;
+    top: 80px;
+    left: 433px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo7{        
+    width: 152px;
+    top: 169px;
+    left: 622px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo8{    
+    width: 109px;
+    top: 381px;
+    left: 642px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo9{    
+    width: 113px;
+    top: 80px;
+    left: 811px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo10{    
+    width: 152px;
+    top: 286px;
+    left: 843px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo11{
+    background-color: #fe0000;
+    width: 113px;
+    top: 126px;
+    left: 1008px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo12{        
+    width: 152px;
+    top: 286px;
+    left: 1053px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo13{        
+    width: 147px;
+    top: 64px;
+    left: 1273px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo14{        
+    width: 112px;
+    top: 232px;
+    left: 1244px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+
+}
+.Bubbles .Clogo15{        
+    width: 112px;
+    top: 86px;
+    left: 1509px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
+}
+.Bubbles .Clogo16{        
+    width: 111px;
+    top: 290px;
+    left: 1509px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;    
+ 
+}
+.Bubbles .Clogo17{        
+    width: 152px;
+    top: 177px;
+    left: 1650px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.Bubbles .Clogo18{            
+    width: 113px;
+    top: 379px;
+    left: 1679px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;
+}
+
+.Our_Customers_Logo button{
+    position: relative;
+    z-index: -10;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: #437EF7;
+    gap: 13px;
+    cursor: pointer;
+ }
+ @media screen and (max-width:1441px) {
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+ }
+ @media screen and (max-width:1025px) {    
+    .Our_Customers_Logo .Our_Customers_Desc{
+        display: none;
+    }    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+    .Bubbles .Clogo11{
+        display: none;
+    }
+ }
+ @media screen and (max-width:769px) {    
+    .Our_Customers_Logo button{
+        width: 500px;        
+    }    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+    .Bubbles .Clogo7{
+        left: 600px;        
+    }
+    .Bubbles .Clogo1{
+        top: 20px;
+        left: 50px;        
+    }
+ }
+ @media screen and (max-width:426px) {      
+    .Our_Customers_Logo h2{
+        text-align: left;
+        margin-left: 14px;
+    }  
+    .Our_Customers_Logo .Bubbles{ 
+        width: 425px;
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;            
+        height: 350px;
+    }  
+    .Bubbles .Clogo1{
+        display: none;
+    }
+    .Bubbles .Clogo2{        
+        display: none;
+    }
+    .Bubbles .Clogo3{
+        display: none;
+    }
+    .Bubbles .Clogo4{
+        display: none;
+    }        
+    .Bubbles .Clogo5{        
+        top: 154px;
+        left: 15px;
+        width: 69px;
+    }    
+    .Bubbles .Clogo6{   
+        width: 72px;     
+        top: 20px;
+        left: 13px;                
+    }    
+    .Bubbles .Clogo7{        
+        width: 92px;
+        top: 78px;
+        left: 135px;                
+    }   
+    .Bubbles .Clogo8{
+        top: 210px;
+        left: 134px;        
+    }
+    .Bubbles .Clogo9{        
+        width: 72px;
+        top: 19.7px;
+        left: 252.63px;                
+    }
+    .Bubbles .Clogo10{        
+        width: 91px;
+        top: 152px;
+        left: 276px;        
+    }
+    .Our_Customers_Logo button{
+        width: 100%;
+    }
+ }
+ @media screen and (max-width:376px) {    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 400px;    
+    
+    }  
+    .Bubbles .Clogo1{
+        display: none;
+    }
+    .Bubbles .Clogo2{        
+        display: none;
+    }
+    .Bubbles .Clogo3{
+        display: none;
+    }
+    .Bubbles .Clogo4{
+        display: none;
+    }        
+    .Bubbles .Clogo6{        
+        top: 20px;
+        left: 20px;        
+    }
+ }
+
+@keyframes bounce {
+   0%{
+     transform: translateY(0px);
+   }
+   50%{
+    transform: translateY(-20px);
+   }
+   100%{
+    transform: translateY(0px);
+   }   
+}
+@keyframes bounce-back {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+     transform: translateY(10px);
+    }
+    100%{
+     transform: translateY(0px);
+    }   
+ }
+
+
+
+
+
+
+
+
+ /* -------------------------------------Training and capacity----------------------------------- */
+ .TandC{        
+    width: 100% ;
+    margin: 121px 0 121px 0 ;
+    height: 672px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background: url(./assets/background/Mask\ group.svg);
+    background-size: cover;
+    background-position: center;    
+ }
+.TandC_Inner{
+    z-index: -20;
+    position: relative;
+    width: 1380px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TandC_Inner h2{
+    margin-bottom: 16px;
+}
+.TandC_Inner .TandC_Disc{
+    width: 532px;
+    line-height: 24px;
+}
+.TandC .BLTpoints div{
+    display: flex;    
+}
+.TandC .BLTpoints div img{
+    margin-right: 11px;
+}
+.TandCImg{
+    width: 600px;
+}
+.TandC button{
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    background-color: #f05454;
+    width:137px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+}
+@media screen and (max-width:1025px){
+    .TandC{
+        width: 100%;        
+    }
+    .TandCImg{
+        /* display: none; */
+        width: auto;
+    }
+    .TandC_Inner{        
+        width:600px;
+        display: flex;        
+        justify-content: center;
+        margin: auto;
+    }        
+    
+}
+
+@media screen and (max-width:769px) {    
+    .TandC{
+        background-image: url(./assets/background/Mask\ group.svg);
+        background-size: 1500px ;        
+        background-repeat: no-repeat;
+        background-position: -700px;
+    }    
+    .TandC .BLTpoints p{
+        width: 276px;
+    }    
+    .TandC .TandCDTL{
+        position: relative;
+        left: -80px;
+    }
+    .TandCImg{
+        width: 352px;
+        position: absolute;
+        left: 300px;
+    }
+    .TandC button{
+        margin-top: 51px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .TandCImg{
+        display: none;        
+    }
+    .TandC_Inner{            
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;             
+    }
+    .TandCDTL{
+        margin-left: 160px;
+    }
+    .TandCDTL h2{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .TandCDTL .TandC_Disc{                
+        width: 343px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+
+/* ----------------------------Services-------------------------------- */
+.Services {    
+    margin-top: 105px;   
+    margin-bottom: 105px; 
+}
+.Services h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.Services .Service_DSC{
+    margin: auto;
+    width: 753px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.Service_Container {
+    margin: auto;
+    width: 1760px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Service_Container .SBox {    
+    border: solid 1px #EAEBF0;
+    border-radius: 10px;
+    height: 500px;
+    width: 537px;
+}
+.Service_Container .SBox div{    
+    /* background-color: #437EF7; */
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 32px;
+
+}
+.Service_Container .SBox .SBoxDisc{    
+    width: 473px;    
+}
+.Service_Container .SBox button {
+    cursor: pointer;
+    color: #437EF7;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;    
+    background-color: transparent;
+}
+.Services .SseeMore{
+    /* margin: 8px 95px 0 0;    
+    float: right;
+    width: 137px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #f05454;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;         */
+    position: relative;
+    left: 88%;
+    margin-top: 8px;
+    width: 137px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #f05454;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;      
+}
+@media screen and (max-width:1025px){
+    .Service_Container {
+        display: grid;                
+        grid-template-columns: repeat(2 , 400px);
+        grid-gap: 20px;
+        border-radius: 10px;        
+        width: 810px;            
+        margin: auto;
+    }
+    .Service_Container .SMImg{
+        width: 400px;        
+    }
+    .Service_Container .SBox {
+        height: 450px;
+        width: 400px;
+    }
+    .Service_Container .SBox .SBoxDisc{
+        width: 300px;
+    }
+    .Services .SseeMore{       
+        position: relative; 
+        left: 103px;
+    }
+}
+@media screen and (max-width:769px){
+      .Service_Container{        
+        width: 100%;
+        grid-template-columns: 1fr;
+      }  
+      .Service_Container .SBox {
+        height: auto;
+        width: 706px;
+        margin: auto;
+      }
+      .Service_Container .SMImg{
+        width: 100%;
+      }
+      .Service_Container .SBox .SBoxDisc{
+        width: 644px;
+      }
+      .Services .SseeMore{ 
+        z-index: -20;       
+        position: relative;
+        left: 31px;
+    }              
+}
+
+/* ----prequel--- */
+@media screen and (max-width:426px) {
+    .Service_Container{
+        width: 100%;            
+    }
+    .Service_Container .SBox {
+        width: 343px;                
+    }
+    .Service_Container .SMImg{
+        width: 100%;
+    }
+    .Service_Container .SBox div{
+        margin-left: 16px;
+    }    
+    .Services h2 {
+        margin-left: 37px;
+        text-align: left;
+    }
+    .Service_Container .SBox .SBoxDisc{
+        height: auto;
+        width: 303px;
+      }
+    .Services .Service_DSC{
+        text-align: left;
+        width: 350px;        
+        margin-left: 37px;
+    }
+    .Services .SseeMore{
+        position: relative;
+        left: 40px;
+    }           
+}
+@media screen and (max-width:376px) {
+    .Services h2{
+        margin-left: 20px;
+    }
+    .Services .Service_DSC{
+        margin-left: 20px;
+        width: 300px;
+    }
+    .Services .SseeMore {
+        position: relative;
+        left: 15px;
+    }
+}
+
+
+/* ------------------------------------------------Industries-------------------------------------------------------- */
+.Industries{
+    background-color: #F5F5F5;
+    padding-top: 130px;
+}
+.Industries h2{
+    margin-bottom: 25px;
+    /* ----- */
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.Industries .IndP1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Industries .IndP2{
+    display: none;
+}
+.Industries .IndDet{
+    width: 753px;
+    margin: auto;
+    text-align: center;
+}
+.Industries .IndP1 .IndImg{        
+    position: relative;
+    height: 1000px;        
+    width: 1000px;     
+}
+.Industries .IndP1 .IndImg img:first-child{    
+    position: absolute;    
+    top: 10px;
+    left: 350px;
+}
+.Industries .IndP1 .IndImg img:last-child{
+    position: absolute;
+    top: 450px;
+    left: 10px;
+}
+.Industries_Disc {    
+    display: grid;    
+}
+.Industries_Disc h3{    
+    margin-bottom: 10px;
+}
+.Industries .InduBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Industries .InduBox img{
+    margin-right: 26px;    
+}
+.Industries .InduBox p{
+   width: 470px;
+}
+
+.Industries .InduBox h3 {
+    font-size: 24px;
+    font-weight: 400;    
+    width: 244px;
+}
+@media screen and (max-width:1025px) {    
+    .Industries .IndDet{
+        margin-bottom: 50px;
+    }
+    .Industries .IndP1 {
+        display: none;
+    }
+    .Industries .IndP2 {
+        padding-bottom: 130px;
+        display: block;    
+    }
+    .Industries .IndP2 .IndCont {
+        margin-left: 35px;
+        margin-right: 35px;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        margin-bottom: 102px;
+    }
+    .Industries .IndP2 .IndCont .IndImg {
+        width: 266px;
+    }
+    .Industries .IndP2 .IndCont p {
+        width: 100%;
+    }
+    .Industries .InduBox {
+        width: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .Industries h2{
+        text-align: left;
+        margin-left: 37px;
+    }
+    .Industries .IndDet {
+        text-align: left;        
+        width: 350px;       
+    }
+    .Industries .IndP2 .IndCont .IndImg {
+        display: none;
+    }
+    .Industries .IndP2 .IndCont{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:376px){
+    .Industries h2 {
+        margin-left: 20px;
+    }
+    .Industries .IndDet{
+        margin-left: 20px;
+        width: 300px;
+    }
+}
+
+
+/* ---------------------------------------Feedback------------------------------------- */
+.FeedBack {
+    margin-top: 191px;
+    margin-bottom: 191px;
+}
+.FeedBack h2 , .FeedBack .FeedDTL {    
+    text-align: center;
+}
+
+.FeedBack .FeedDTL  {
+    line-height: 26px;
+    width: 800px;
+    margin: auto;
+}
+
+.FeedBack .comments {    
+    display: flex;
+    width: 100%;    
+    justify-content: center;    
+    align-items: center;
+    gap: 80px;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.FeedBack .comments .FBox {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: start;
+    height: 437px;
+    width: 401px;
+    /* background-color: #30475E; */
+    margin: 10px;
+    padding: 22px;
+    box-shadow: 5px 5px 8px #0000002a;    
+    border-radius: 16px;
+}
+.FeedBack .comments .FBox p {
+    line-height: 25px;
+}
+.FeedBack .comments .FBox .FeedBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 401px;
+    margin: 0 auto;
+}
+.FeedBack .comments .FBox .FeedBox .Logo {
+    width: 130px;
+}
+
+@media screen and (max-width:1441px) { 
+    .FeedBack .comments {    
+        gap: 20px;        
+    }
+    .FeedBack .comments .FBox {
+        width: 390px;
+    }
+}
+
+@media screen and (max-width:1025px ) {
+    .FeedBack .comments {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .FeedBack .comments .FBox {
+        height: 349px;        
+        width: 617px;
+    }
+    .FeedBack .comments .FBox .FeedBox  {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:769px ) {
+    .FeedBack .comments {        
+        gap: 22px;
+    }
+    .FeedBack .FeedDTL  {
+        line-height: 26px;
+        width: 100%;        
+    }
+}
+
+@media screen and (max-width:426px ) {   
+    .FeedBack h2 {
+        width: 343px;
+        text-align: left;
+        margin: auto;
+        margin-bottom: 16px;
+    } 
+    .FeedBack .comments .FBox {
+        width: 343px;        
+        height: 437px;
+    }
+    .FeedBack .FeedDTL {        
+        width: 343px;
+        text-align: left;        
+        margin: auto;
+        
+    }
+}
+@media screen and (max-width:376px ) {
+    .FeedBack .comments {
+        width: 100%;
+    }
+    .FeedBack .comments .FBox {
+        width: 310px;        
+        height: 449px;
+    }
+    .FeedBack .comments .FBox .FeedBox {
+        width: 100% ;        
+    }
+    .FeedBack .comments .FBox .FeedBox .Logo {
+        width: 120px;        
+    }
+    .FeedBack .comments .FBox .FeedBox div {        
+        height: 80px;
+    }
+    .FeedBack .comments .FBox .FeedBox div h4 , .FeedBack .comments .FBox .FeedBox div p {
+        height: 50px;        
+        display: flex;        
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+/* .FeedBack {
+    background-image: url(./assets/background/Group\ 378.svg);
+}
+.FeedBack h2{
+    margin-top: 200px;
+    text-align: center;
+}
+.FeedBack .FeedDTL{
+    text-align: center;
+    width: 800px;
+    margin: auto;
+}
+.FeedBack .comments {
+    background-color: white;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin: auto;
+    width:   1500px;
+    margin-top: 36px;
+}
+.FeedBack .comments p{
+    width: 357px;
+}
+.FeedBack .FBox{    
+    height: 437px;
+    padding: 25px;
+    box-shadow: 0px 0px 5px #8b8a8a;
+    border-radius: 10px;
+    width: 401px;
+}
+.FeedBack .FeedBox {        
+    width: 401px;           
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;   
+    margin-bottom: 10px;
+}
+.FeedBack .FeedBox div{        
+    height: 100%;      
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width:200px;    
+    line-height: 1;    
+}
+.FeedBack .FeedBox div p , .FeedBack .FeedBox div h4 {
+    width: 100%;
+}
+.FeedBack .FeedBox .Logo {
+    width: 120px;
+}
+@media screen and (max-width:1025px) {          
+    .FeedBack .FBox{
+        margin-bottom: 50px;
+        height: 200px;
+        padding: 25px;
+        box-shadow: 0px 0px 5px #8b8a8a;
+        border-radius: 10px;
+        width: 90%;
+    }     
+    .FeedBack .FBox p {
+        width: 100%;        
+    }
+    .FeedBack .comments { 
+        display: flex;      
+        flex-direction: column  ;
+        width: 100%;
+    }  
+    .FeedBack .FeedBox{        
+        width: 900px;        
+        margin: auto;
+    }  
+}
+@media screen and (max-width:768px) {    
+    .FeedBack {        
+    }
+    .FeedBack h2{        
+        text-align: left;
+        margin-left: 30px;
+        width: 80%;
+    }    
+    .FeedBack .FeedBox{             
+        width: 617px;        
+        margin: auto;
+    }  
+    .FeedBack .comments {
+        z-index: -10;
+    }
+    .FeedBack .FeedDTL {        
+        text-align: left;
+        margin-left: 30px;
+        width: 90%;                
+    }        
+    
+    .FeedBack .FBox{            
+        width: 617px;       
+        height: 349px;
+    }       
+}
+
+@media screen and (max-width:426px){
+    .FeedBack {
+        margin-top: 66px;
+    }
+    .FeedBack .FBox {
+        width: 343px;
+        height: 449px;
+    }.FeedBack .FeedDTL {        
+        width: 343px;
+    }  
+    .FeedBack .FeedBox{        
+        width: 360px;
+        margin: auto;
+    }    
+}
+@media screen and (max-width:376px){
+    .FeedBack .FeedDTL {
+        text-align: left;
+        margin-left: 30px;
+        width: 300px;
+    }    
+    .FeedBack .FBox {
+        width: 250px;
+        margin: auto;
+    }
+    .FeedBack .FBox p {
+        width: 100%;        
+    }
+    .FeedBack .comments {        
+        grid-gap: 30px;
+    }
+    .FeedBack .FeedBox {
+        width: 100%;
+    }
+    .FeedBack .FeedBox div h4 {        
+        width: 100%;
+    }
+    .FeedBack .FeedBox .Logo {
+        display: none;
+    }
+} */
+
+
+/* --------------------------------------Contact Form ----------------------------------- */
+.Contact_Form  {
+    margin-top: 122px;    
+}
+.Contact_Form  h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 50px;
+}
+.Contact_Form .CForm_All{  
+    display: flex;     
+    justify-content: space-between;
+    align-items: center;
+    width: 1665px;
+    margin: auto;          
+}
+.Contact_Form .CForm_All img{
+    width: 716px;
+}
+.Contact_Form .Form {    
+    padding: 32px;    
+    border: 1px solid #8b8a8a;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 24px;
+}
+.Contact_Form .Form .PInfo {    
+    width: 100%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    margin: auto;
+    grid-gap:24px    
+}
+.Contact_Form .Form .PInfo input {
+    width: 376px;
+    height: 46px;    
+    border-radius: 10px;   
+    border: 1px solid #8b8a8a;
+    padding-left: 16px  ;
+}
+.Contact_Form .Form  textarea {  
+    padding: 12px 16px 12px 12px;  
+    /* margin-left: 32px; */
+    height: 201px;    
+    border-radius: 10px;
+    resize: vertical    ;
+}
+.Contact_Form .Form .Button {    
+    display: flex;
+    justify-content: space-between;    
+}
+.Contact_Form .Form .Button button{
+    color: #FFFFFF;
+    background-color: #f05454;
+    width: 88px;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+}
+@media screen and (max-width:1025px) {
+    .Contact_Form .CForm_All {
+        width: 100%;
+    }
+    .Contact_Form .CForm_All img {
+        display: none;
+    } 
+    .Contact_Form .Form {
+        margin: auto;
+    }   
+}
+@media screen and (max-width:769px) {        
+    .Contact_Form .CForm_All {        
+        width: 706px;
+    }
+    .Contact_Form .Form {  
+        width: 100%;      
+    }
+    .Contact_Form .Form .PInfo input {
+        width: 270px;        
+    }
+}
+@media screen and (max-width:426px) {        
+    .Contact_Form .CForm_All {        
+        width: 100%;
+    }
+    .Contact_Form .Form {  
+        border: none;
+        width: 100%;      
+    }
+    .Contact_Form .Form .PInfo input {
+        width: 343px;        
+    }
+    .Contact_Form .Form .PInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .Contact_Form .Form  textarea {
+        height: 143px;
+    }
+    .Contact_Form .Form .Button {
+        display: grid;
+    }
+}
+@media screen and (max-width:376px) {
+    .Contact_Form .Form {          
+        border: none;
+        width: 290px;  
+        margin: auto;    
+    }
+    .Contact_Form .Form .PInfo input {
+        margin: auto;
+        width: 280px;     
+    }
+}
+
+
+/* ----------------------------Footer------------------------------------------------------------- */
+.Footer2
+{
+    display: none;
+}
+footer {
+    margin-top: 117px;
+    padding-top: 58px;
+    background-color: #8b8a8a;
+}
+footer .F1 {
+    margin: auto;
+    width: 1310px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;    
+}
+footer .F1 div:first-child p{
+    color: #EAEBF0;
+    width: 247px;    
+}
+footer .F1 .FCT1,footer .F1 .FCT2{    
+    height: 180px;    
+    color: #EAEBF0;
+    /* display: grid;
+    justify-content: space-between;
+    align-items: center; */
+}
+footer .F1 .FCT3 {
+    color: #EAEBF0;
+    height: auto;
+    width: 302px;    
+}
+footer .F1 .FCT3 form {       
+     display: flex;
+     width: 302px;
+}
+footer .F1 .FCT3 form button {
+    color: #EAEBF0;
+    font-size: 15px;
+    font-weight: 600;
+    width: 88px;
+    background-color: #f05454;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 46px;
+}
+footer .F1 .FCT3 form input {
+    height: 44px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    padding-left:16px;
+    color: #A5ACBA;
+    font-size: 15px;
+    font-weight: 400;
+    background: #30475E;
+}
+footer .F2 {    
+    color: #EAEBF0;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 1310px;  
+    height: auto    ;
+    margin: auto;
+    margin-top: 97px;   
+    padding-bottom: 50px;    
+}
+footer .Developer {
+    display: grid;
+    grid-gap: 24px;
+}
+footer .Developer p {
+    margin-top: 60px;
+}
+footer .Developer .SocialLogo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .Developer .SocialLogo img {
+    margin-right: 29px;
+}
+footer .F1 .FCT4 {
+    display: none;
+}
+footer .F1 .FCT5 {
+    display: none;
+}
+@media screen and (max-width:1025px) {
+    footer .F1{        
+        width: 768px;        
+        margin: auto;
+        display: grid;        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 62px;
+    }    
+    footer .F1 .FCT1 {
+        display: none;
+    } 
+    footer .F1 .FCT2 {
+        display: none;
+    } 
+    footer .F1 .FCT4 {
+        color: #EAEBF0;
+        display: block;
+    }
+    footer .F1 .FCT5 {
+        color: #EAEBF0;
+        display: block;
+    }
+    footer .F2 {        
+        margin-top: 0;
+        width: 768px;
+    }
+    footer .F2 .Developer p {        
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    footer .F1{        
+        width: 626px;        
+        margin: auto;
+        display: grid;        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 62px;
+    } 
+    footer .F2 {        
+        width: 626px;
+    }   
+    footer .F2 .Developer p {        
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    footer {
+        display: none;
+    }
+    .Footer2{                
+        display: grid;        
+        place-items: center;
+
+    }
+    .Footer2 .FInner{           
+        width: 400px;
+        display: block;
+        margin: auto;
+    }
+    .Footer2 .FooterCNT p{
+        color: #EAEBF0;
+        width: 343px;
+    }
+    .Footer2 .FCT {
+        color: #EAEBF0;
+        width: 272px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    .Footer2    .FCT3 {
+        color: #EAEBF0;
+        height: auto;
+        width: 302px;    
+    }
+    .Footer2    .FCT3 form   {       
+         display: flex;
+         width: 302px;
+    }
+    .Footer2    .FCT3 form button {
+        color: #EAEBF0;
+        font-size: 15px;
+        font-weight: 600;
+        width: 88px;
+        background-color: #f05454;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 46px;
+    }
+    .Footer2    .FCT3 form input {
+        height: 44px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border: none;
+        padding-left:16px;
+        color: #A5ACBA;
+        font-size: 15px;
+        font-weight: 400;
+        background: #30475E;
+    }  
+    .Footer2 .F2 {
+        width: 262px;
+        display: grid;
+        place-items: center;
+        margin: auto;
+    }
+    .Footer2 .F2 .Freserved {
+        text-align: center;
+        margin-top: 24px;
+    }
+    .Footer2 .F2 .Developer p{
+        text-align: center;
+        margin-top: 0;      
+        grid-gap: 16px;        
+    }
+}
+@media screen and (max-width:376px) {
+    .Footer2 .FInner {
+        width: 330px ;
+        margin: auto;
+    }
+    .Footer2 .FInner .FooterCNT {        
+        width: 100%;
+    }
+    .Footer2 .FooterCNT p{
+        color: #EAEBF0;    
+    }
+    .Footer2 .FooterCNT p{
+        width: 300px;        
+        padding: 0;
+
+        margin-right: 0;
+    }
+    .Footer2 .F2 {
+        width: 300px;
+        margin: auto;
+        
+    }
+}
