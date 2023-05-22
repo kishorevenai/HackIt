@@ -372,7 +372,7 @@ body p {
 .Our_Customers_Logo .Bubbles{ 
   margin: auto;
   overflow: hidden;
-  width: 1920px;        
+  width: 100%;        
   position: relative;    
   height: 500px;    
   z-index: -10;
@@ -546,7 +546,7 @@ body p {
 .Bubbles .Clogo17{        
   width: 152px;
   top: 177px;
-  left: 1700px;
+  left: 1650px;
   animation-name: bounce;
   animation-duration: 5s;
   animation-timing-function: ease-out;    
