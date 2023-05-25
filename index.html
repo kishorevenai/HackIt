@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackIt</title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <link rel="stylesheet" href="./index.css" aria-disabled="true">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js" async></script>
+    <script src="./index.js" defer></script>        
+    <script src="./common.js" defer></script>       
 </head>
 <body>
     <div class="Home_Page">
@@ -151,7 +153,7 @@
                     </div>
                 </div>                                                
             </div>            
-            <a href="./services.html"><button class="SseeMore"><p>See more</p><img src="./assets/svgs/IconWhite.svg"></button></a>
+            <a class="buttonLink" href="./services.html"><button class="SseeMore"><p>See more</p><img src="./assets/svgs/IconWhite.svg"></button></a>
         </section> 
         <section class="Industries">
             <h2>Industries Served</h2>
@@ -439,7 +441,6 @@
         </div>
         </footer>
     </div>      
-    <script src="./index.js"></script>        
-    <script src="./common.js"></script>        
+     
 </body>
 </html>

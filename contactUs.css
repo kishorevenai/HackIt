@@ -11,21 +11,21 @@ a {
     font-weight: 600;       
 }
 
-.Headers{
+.Headers{    
     background-color: #ffffff;
-    top: 0;
+   top: 0;
    position: sticky;
    display: flex;
    justify-content: space-between;
    align-items: center;  
    height: 80px;
 }
-.Header_Links{    
+.Header_Links{        
     display: flex;
     justify-content: center;   
     gap: 80px;
     align-items: center;    
-    margin-right: 90px;
+    margin-right: 90px;    
 }
 .Logo_favicon{
     margin-left: 90px;
@@ -37,8 +37,56 @@ a {
     display: none;
 }
 
+@media screen and (max-width:3840px) and (min-width:2256px) {
+    .Headers{
+        width: 1609px;              
+        margin: auto;
+    }    
+}
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width:2255px) and (min-width:1920px) {
+    .Headers {
+      width: 1900px;
+      margin: auto;
+    }
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px) {
+    .Why_Hackit .Why_Hackit_boxe1 {
+        width: 1360px;        
+        margin: auto;
+        display: flex;        
+        align-items: center;
+    }
+    .Why_Hackit .Why_Hackit_boxe1 div {
+        width: 400px;          
+    } 
+    .Why_Hackit .Why_Hackit_boxe1 div p {
+        width: 100%;
+    }
+    .Why_Hackit .Why_Hackit_boxe2 {
+        margin-top: 30px;
+        width: 1360px;        
+    }
+    .Why_Hackit .Why_Hackit_boxe2 div {
+        width: 630px;        
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1439px) {    
+    .Header_Links {      
+      width: 900px;
+      margin-right: 20px;   
+      flex-grow: 1;    
+    }
+    .Headers .Logo_favicon{ 
+      margin-left: 20px;      
+      flex-grow: 3;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px ) {
     .Header_Links{
         display: flex;
         justify-content: center;   
@@ -49,13 +97,11 @@ a {
     .Logo_favicon{
         margin-left: 50px;
     }
-}
-@media screen and (max-width:769px) {
     .Header_Links{
         display: none;
     }
     .Header_Links_Mob{    
-        z-index: 1000000;          
+        z-index: 1000000px;          
         transition: 0.5s;   
         border-top-right-radius: 20px;        
         border-bottom-right-radius: 20px;
@@ -73,7 +119,7 @@ a {
         gap: 20px;     
     }
     .Header_Links_Mob.active{
-        z-index: 1000000;
+        z-index: -1000000;
         transition: 0.5s;   
         border-top-right-radius: 20px;        
         border-bottom-right-radius: 20px;                
@@ -91,18 +137,16 @@ a {
         border: 1px solid #EAEBF0; 
         gap: 20px;       
     }
-    .Hamburger{
-        z-index: 5000;
+    .Hamburger{                     
         transition: 0.3s;
         display: block;
-        position: relative;
+        position: relative;        
         margin-right: 70px;
         height: 5px;
         width: 30px;        
         background-color: #f05454;        
     }
-    .Hamburger::before{  
-        z-index: 5000;
+    .Hamburger::before{          
         transition: 0.3s;      
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -114,8 +158,7 @@ a {
         width: 30px;
         background-color: black;            
     }
-    .Hamburger::after{
-        z-index: 5000;
+    .Hamburger::after{        
         transition: 0.3s;
         left: 0px;
         border-top-right-radius: 20px;
@@ -127,8 +170,7 @@ a {
         width: 30px;
         background-color: black;            
     }
-    .Hamburger.active{
-        z-index: 5000;
+    .Hamburger.active{        
         display: block;
         position: relative;
         margin-right: 70px;
@@ -136,8 +178,7 @@ a {
         width: 30px;        
         background-color: #f05454;                
     }
-    .Hamburger.active::before{   
-        z-index: 5000;     
+    .Hamburger.active::before{           
         transition: 0.3s;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -149,8 +190,7 @@ a {
         width: 30px;
         background-color: black;            
     }
-    .Hamburger.active::after{
-        z-index: 5000;
+    .Hamburger.active::after{        
         transition: 0.3s;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
@@ -190,6 +230,7 @@ a {
 }
 
 
+
 /* ----------------------------------------Contact Us------------------------------------------------- */
 .Contact_Us {       
     margin-top: 50px; 
@@ -206,8 +247,7 @@ a {
     width: 624px;
 }
 .Contact_Us img {
-    width: 974px;
-    background-color: aqua;
+    width: 974px;    
 }
 .Contact_Us .CUP1 {
     margin: auto;
@@ -216,40 +256,52 @@ a {
     justify-content: space-between;
     align-items: center;    
 }
+
+@media screen and (max-width:1919px) and (min-width:1600px) {
+    .Contact_Us .CUP1 {
+        display: flex;
+        justify-content: center;
+    }       
+}
+
 @media screen and (max-width:1441px) {
    .Contact_Us img {
     width: 700px;
    }
-   .Contact_Us .CUP1 {
-    margin: auto;
-    width: 1390px;
+   .Contact_Us .CUP1 {    
+    width: 100%;
    }
 }
-@media screen and (max-width:1025px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    .Contact_Us .LCnt h3{
+        display: none;
+    }
     .Contact_Us .LCnt p {
-        width: 400px;
+        display: none;
     }
     .Contact_Us img {
-        width: 400px;
+        width: 800px;
+        margin: auto;
     }
     .Contact_Us .CUP1 {
         margin: auto;
         width: 750px;
     }
 }
-@media screen and (max-width:769px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
     .Contact_Us .CUP1 {
         grid-gap: 24px;
         display: grid;
         width: 711px;
     }
     .Contact_Us .LCnt p {
-        width: 624px;
+        line-height: 28px;
+        width: 624px;        
     }
     .Contact_Us img {
         width: 430px;
         margin-left: 256px;
-    }
+    }    
 }
 @media screen and (max-width:426px) {
     .Contact_Us img {
@@ -302,15 +354,27 @@ a {
     font-weight: 400;
 }
 
+@media screen and (max-width:1919px) and (min-width:1600px)  {
+    .CViewPort {
+        width: 80% ;
+    }
+}
+
+/* @media screen and (max-width:1439px) and (min-width:1024px) {
+    .CViewPort{       
+         width: 100%;
+    }
+} */
+
 @media screen and (max-width:1441px) {
     .CViewPort {        
         width: 1390px;
         margin: auto;
     }    
 }
-@media screen and (max-width:1025px) {
+@media screen and (min-width:768px) and (max-width:1439px) {
     .CViewPort {        
-        width: 711px;        
+        width: 90%;        
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -406,7 +470,32 @@ a {
     border: none;
     border-radius: 10px;
 }
-@media screen and (max-width:1025px) {
+
+@media screen and (max-width:1919px) and (min-width:1600px) {    
+    .Contact_Form .CForm_All{     
+        width: 100%;   
+        justify-content: center;
+        margin: auto;        
+        gap: 20px;
+    }
+    .Contact_Form .CForm_All img{
+        width: 600px;
+    }    
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px) {
+    .Contact_Form .CForm_All{     
+        width: 100%;   
+        justify-content: center;
+        margin: auto;        
+        gap: 20px;
+    }
+    .Contact_Form .CForm_All img{
+        width: 550px;
+    }    
+}
+
+@media screen and (min-width:768px) and (max-width:1439px)  {    
     .Contact_Form .CForm_All {
         width: 100%;
     }
@@ -451,14 +540,15 @@ a {
     }
 }
 @media screen and (max-width:376px) {
-    .Contact_Form .Form {           
+    .Contact_Form .Form {          
         border: none;
-        width: 360px;  
-        margin: auto;            
+        width: 290px;  
+        margin: auto;    
     }
     .Contact_Form .Form .PInfo input {
-        width: 100%;            
-    }    
+        margin: auto;
+        width: 280px;     
+    }
 }
 
 
@@ -568,7 +658,8 @@ footer .F1 .FCT4 {
 footer .F1 .FCT5 {
     display: none;
 }
-@media screen and (max-width:1025px) {
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
     footer .F1{        
         width: 768px;        
         margin: auto;
@@ -595,11 +686,12 @@ footer .F1 .FCT5 {
         width: 768px;
     }
     footer .F2 .Developer p {        
-        margin-top: 60px;
+        margin-top: 60px;        
     }
 }
 
-@media screen and (max-width:769px) {
+
+@media screen and (min-width:768px)  and (max-width:1023px){
     footer .F1{        
         width: 626px;        
         margin: auto;

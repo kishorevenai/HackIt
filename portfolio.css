@@ -15,8 +15,8 @@ body p {
   line-height: 26px;
   margin-top: 0px;
 }
-.Headers{
- background-color: #ffffff;
+.Headers{    
+  background-color: #ffffff;
  top: 0;
  position: sticky;
  display: flex;
@@ -24,174 +24,216 @@ body p {
  align-items: center;  
  height: 80px;
 }
-  .Header_Links{    
-    display: flex;
-    justify-content: center;   
-    gap: 80px;
-    align-items: center;    
-    margin-right: 90px;
+.Header_Links{        
+  display: flex;
+  justify-content: center;   
+  gap: 80px;
+  align-items: center;    
+  margin-right: 90px;    
+}
+.Logo_favicon{
+  margin-left: 90px;
+}
+.Header_Links_Mob{
+  display: none;
+}
+.Hamburger{
+  display: none;
+}
+
+@media screen and (max-width:3840px) and (min-width:2256px) {
+  .Headers{
+      width: 1609px;              
+      margin: auto;
+  }    
+}
+
+@media screen and (max-width:2255px) and (min-width:1920px) {
+  .Headers {
+    width: 1900px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px) {
+  .Why_Hackit .Why_Hackit_boxe1 {
+      width: 1360px;        
+      margin: auto;
+      display: flex;        
+      align-items: center;
+  }
+  .Why_Hackit .Why_Hackit_boxe1 div {
+      width: 400px;          
+  } 
+  .Why_Hackit .Why_Hackit_boxe1 div p {
+      width: 100%;
+  }
+  .Why_Hackit .Why_Hackit_boxe2 {
+      margin-top: 30px;
+      width: 1360px;        
+  }
+  .Why_Hackit .Why_Hackit_boxe2 div {
+      width: 630px;        
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {    
+    .Header_Links {      
+      width: 900px;
+      margin-right: 20px;   
+      flex-grow: 1;    
+    }
+    .Headers .Logo_favicon{ 
+      margin-left: 20px;      
+      flex-grow: 3;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px ) {
+  .Header_Links{
+      display: flex;
+      justify-content: center;   
+      gap: 40px;
+      align-items: center;
+      margin-right: 50px;
   }
   .Logo_favicon{
-    margin-left: 90px;
+      margin-left: 50px;
   }
-  .Header_Links_Mob{
-    display: none;
+  .Header_Links{
+      display: none;
   }
+  .Header_Links_Mob{    
+      z-index: 1000000px;          
+      transition: 0.5s;   
+      border-top-right-radius: 20px;        
+      border-bottom-right-radius: 20px;
+      transform: translateX(-100%);
+      height: 300px;
+      color: white;        
+      width: 500px;
+      top: 80px;        
+      position: absolute;
+      display: flex;        
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f05454;   
+      gap: 20px;     
+  }
+  .Header_Links_Mob.active{
+      z-index: -1000000;
+      transition: 0.5s;   
+      border-top-right-radius: 20px;        
+      border-bottom-right-radius: 20px;                
+      transform: translateX(0px);
+      height: 300px;
+      color: white;        
+      width: 500px;
+      top: 80px;        
+      position: absolute;
+      display: flex;        
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f05454;   
+      border: 1px solid #EAEBF0; 
+      gap: 20px;       
+  }
+  .Hamburger{                     
+      transition: 0.3s;
+      display: block;
+      position: relative;        
+      margin-right: 70px;
+      height: 5px;
+      width: 30px;        
+      background-color: #f05454;        
+  }
+  .Hamburger::before{          
+      transition: 0.3s;      
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      left: 0px;
+      position: absolute;
+      content:' ';
+      top: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger::after{        
+      transition: 0.3s;
+      left: 0px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      position: absolute;
+      content:' ';
+      bottom: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger.active{        
+      display: block;
+      position: relative;
+      margin-right: 70px;
+      height: 5px;
+      width: 30px;        
+      background-color: #f05454;                
+  }
+  .Hamburger.active::before{           
+      transition: 0.3s;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      position: absolute;        
+      left: -10px;
+      content:' ';
+      top: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+  .Hamburger.active::after{        
+      transition: 0.3s;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      position: absolute;
+      left: 10px;
+      content:' ';        
+      bottom: 8px;
+      height: 5px;
+      width: 30px;
+      background-color: black;            
+  }
+}
+@media screen and (max-width:426px)  {
   .Hamburger{
-    display: none;
+      transition: 0.3s;
+      display: block;
+      position: relative;
+      margin-right: 30px;
+      height: 5px;
+      width: 30px;        
+      background-color: #f05454;        
   }
-  
-  
-  @media screen and (max-width:1025px) {
-    .Header_Links{
-        display: flex;
-        justify-content: center;   
-        gap: 40px;
-        align-items: center;
-        margin-right: 50px;
-    }
-    .Logo_favicon{
-        margin-left: 50px;
-    }
+  .Hamburger.active{
+      margin-right: 30px;
   }
-  @media screen and (max-width:769px) {
-    .Header_Links{
-        display: none;
-    }
-    .Header_Links_Mob{    
-        z-index: 1000000;          
-        transition: 0.5s;   
-        border-top-right-radius: 20px;        
-        border-bottom-right-radius: 20px;
-        transform: translateX(-100%);
-        height: 300px;
-        color: white;        
-        width: 500px;
-        top: 80px;        
-        position: absolute;
-        display: flex;        
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #f05454;      
-        gap: 20px;  
-    }
-    .Header_Links_Mob.active{
-        z-index: 1000000;          ;                      
-        transition: 0.5s;   
-        border-top-right-radius: 20px;        
-        border-bottom-right-radius: 20px;                
-        transform: translateX(0px);
-        height: 300px;
-        color: white;        
-        width: 500px;
-        top: 80px;        
-        position: absolute;
-        display: flex;        
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #f05454;   
-        border: 1px solid #EAEBF0;  
-        gap: 20px;      
-    }
-    .Hamburger{
-        z-index: 5000;
-        transition: 0.3s;
-        display: block;
-        position: relative;
-        margin-right: 70px;
-        height: 5px;
-        width: 30px;        
-        background-color: #f05454;        
-    }
-    .Hamburger::before{  
-        z-index: 5000;
-        transition: 0.3s;      
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        left: 0px;
-        position: absolute;
-        content:' ';
-        top: 8px;
-        height: 5px;
-        width: 30px;
-        background-color: black;            
-    }
-    .Hamburger::after{
-        z-index: 5000;
-        transition: 0.3s;
-        left: 0px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        position: absolute;
-        content:' ';
-        bottom: 8px;
-        height: 5px;
-        width: 30px;
-        background-color: black;            
-    }
-    .Hamburger.active{
-        z-index: 5000;
-        display: block;
-        position: relative;
-        margin-right: 70px;
-        height: 5px;
-        width: 30px;        
-        background-color: #f05454;                
-    }
-    .Hamburger.active::before{   
-        z-index: 5000;     
-        transition: 0.3s;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        position: absolute;        
-        left: -10px;
-        content:' ';
-        top: 8px;
-        height: 5px;
-        width: 30px;
-        background-color: black;            
-    }
-    .Hamburger.active::after{
-        z-index: 5000;
-        transition: 0.3s;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        position: absolute;
-        left: 10px;
-        content:' ';        
-        bottom: 8px;
-        height: 5px;
-        width: 30px;
-        background-color: black;            
-    }
+  .Logo_favicon{
+      margin-left: 30px;
   }
-  @media screen and (max-width:426px)  {
-    .Hamburger{
-        transition: 0.3s;
-        display: block;
-        position: relative;
-        margin-right: 30px;
-        height: 5px;
-        width: 30px;        
-        background-color: #f05454;        
-    }
-    .Hamburger.active{
-        margin-right: 30px;
-    }
-    .Logo_favicon{
-        margin-left: 30px;
-    }
-    .Header_Links_Mob.active{        
-        width: 100%;        
-    }
+  .Header_Links_Mob.active{        
+      width: 100%;        
   }
-  @media screen and (max-width:376px) {
-    .Header_Links_Mob.active{
-        width: 100%;
-    }
-  } 
+}
+@media screen and (max-width:376px) {
+  .Header_Links_Mob.active{
+      width: 100%;
+  }
+}
+
+
+
 .banner_port {
   width: 1360px;
   margin: auto;
@@ -223,8 +265,7 @@ body p {
 .port_icons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  /* flex-wrap: wrap; */
+  justify-content: space-around;  
 }
 .port_icons2 {
   display: flex;
@@ -235,16 +276,31 @@ body p {
 .port_icons3{
     display: none;
 }
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width:3840px) and (min-width:2256px) {
+  .port_icons {
+    width: 1900px;
+    margin: auto;
+  }
+  .port_icons2 {
+    width: 1900px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1439px) {
   .banner_port {
-    width: 100%;
-    align-items: center;
+    width: 100%;    
+  }
+  .banner_port .port_img {
+    width: 800px;
   }
   .port_head {
+    display: none ;
     width: 400px;
   }
   .port_img {
-    width: 450px;
+    width: 400px;
     height: auto;
   }
   .port_head h1 {
@@ -262,7 +318,7 @@ body p {
     width: 200px;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 768px) and (max-width:1023px) {
   .banner_port {
     width: 100%;
     flex-direction: column;
@@ -274,7 +330,7 @@ body p {
   .port_img {
     width: 322.73px;
     height: auto;
-    margin-left: 420px;
+    margin-left: 350px;
   }
   .port_head h1 {
     font-weight: 700;
@@ -384,6 +440,7 @@ body p {
   top: 45px;
   left: 134px;
   height: 146px; 
+  width: 146px;
   animation-name: bounce-back;
   animation-duration: 5s;
   animation-timing-function: ease-out;    
@@ -392,6 +449,7 @@ body p {
 }
 .Bubbles .Clogo2{        
   width: 113px;
+  height: 113px;
   top: 219px;
   left: 94px;
   animation-name: bounce;
@@ -402,6 +460,7 @@ body p {
 }
 .Bubbles .Clogo3{    
   width: 113px;
+  height: 113px;
   top: 173px;
   left: 283px;
   animation-name: bounce-back;
@@ -411,7 +470,8 @@ body p {
   animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo4{
-  width: 152px;    
+  width: 152px; 
+  height: 152px;   
   top: 336px;
   left: 244px;
   animation-name: bounce;
@@ -422,6 +482,7 @@ body p {
 }
 .Bubbles .Clogo5 {        
   width: 108px;
+  height: 108px;
   top: 290px;
   left: 433px;
   animation-name: bounce-back;
@@ -432,6 +493,7 @@ body p {
 }
 .Bubbles .Clogo6{    
   width: 113px;
+  height: 113px;
   top: 80px;
   left: 433px;
   animation-name: bounce-back;
@@ -442,6 +504,7 @@ body p {
 }
 .Bubbles .Clogo7{        
   width: 152px;
+  height: 152px;
   top: 169px;
   left: 622px;
   animation-name: bounce;
@@ -452,6 +515,7 @@ body p {
 }
 .Bubbles .Clogo8{    
   width: 109px;
+  height: 109px;
   top: 381px;
   left: 642px;
   animation-name: bounce-back;
@@ -462,6 +526,7 @@ body p {
 }
 .Bubbles .Clogo9{    
   width: 113px;
+  height: 113px;
   top: 80px;
   left: 811px;
   animation-name: bounce-back;
@@ -472,6 +537,7 @@ body p {
 }
 .Bubbles .Clogo10{    
   width: 152px;
+  height: 152px;
   top: 286px;
   left: 843px;
   animation-name: bounce;
@@ -483,6 +549,7 @@ body p {
 .Bubbles .Clogo11{
   background-color: #fe0000;
   width: 113px;
+  height: 113px;
   top: 126px;
   left: 1008px;
   animation-name: bounce-back;
@@ -493,6 +560,7 @@ body p {
 }
 .Bubbles .Clogo12{        
   width: 152px;
+  height: 152px;
   top: 286px;
   left: 1053px;
   animation-name: bounce;
@@ -503,6 +571,7 @@ body p {
 }
 .Bubbles .Clogo13{        
   width: 147px;
+  height: 147px;
   top: 64px;
   left: 1273px;
   animation-name: bounce-back;
@@ -513,6 +582,7 @@ body p {
 }
 .Bubbles .Clogo14{        
   width: 112px;
+  height: 112px;
   top: 232px;
   left: 1244px;
   animation-name: bounce-back;
@@ -524,6 +594,7 @@ body p {
 }
 .Bubbles .Clogo15{        
   width: 112px;
+  height: 112px;
   top: 86px;
   left: 1509px;
   animation-name: bounce-back;
@@ -534,6 +605,7 @@ body p {
 }
 .Bubbles .Clogo16{        
   width: 111px;
+  height: 111px;
   top: 290px;
   left: 1509px;
   animation-name: bounce-back;
@@ -545,6 +617,7 @@ body p {
 }
 .Bubbles .Clogo17{        
   width: 152px;
+  height: 152px;
   top: 177px;
   left: 1650px;
   animation-name: bounce;
@@ -555,6 +628,7 @@ body p {
 }
 .Bubbles .Clogo18{            
   width: 113px;
+  height: 113px;
   top: 379px;
   left: 1679px;
   animation-name: bounce;
@@ -580,6 +654,21 @@ body p {
   gap: 13px;
   cursor: pointer;
 }
+
+@media screen and (max-width:3840px) and (min-width:2256px) {
+  .Our_Customers_Logo .Bubbles{  
+      width: 1900px;        
+      margin: auto;        
+  }    
+}
+
+@media screen and (max-width:1919px) and (min-width:1600px) {
+  .Our_Customers_Logo .Bubbles {
+      width: 1500px;        
+      margin: auto;        
+  }
+}
+
 @media screen and (max-width:1441px) {
   .Our_Customers_Logo .Bubbles{ 
       margin: auto;
@@ -835,7 +924,8 @@ footer .F1 .FCT4 {
 footer .F1 .FCT5 {
     display: none;
 }
-@media screen and (max-width:1025px) {
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
   footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
     color: white;
   }
@@ -876,7 +966,7 @@ footer .F1 .FCT5 {
     
 }
 
-@media screen and (max-width:769px) {
+@media screen and (min-width:768px)  and (max-width:1023px) {
   footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
     color: white;
   }

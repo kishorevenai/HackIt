@@ -40,8 +40,56 @@ body{
     display: none;
 }
 
+@media screen and (max-width:3840px) and (min-width:2256px) {
+    .Headers{
+        width: 1609px;              
+        margin: auto;
+    }    
+}
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width:2255px) and (min-width:1920px) {
+    .Headers {
+      width: 1900px;
+      margin: auto;
+    }
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px) {
+    .Why_Hackit .Why_Hackit_boxe1 {
+        width: 1360px;        
+        margin: auto;
+        display: flex;        
+        align-items: center;
+    }
+    .Why_Hackit .Why_Hackit_boxe1 div {
+        width: 400px;          
+    } 
+    .Why_Hackit .Why_Hackit_boxe1 div p {
+        width: 100%;
+    }
+    .Why_Hackit .Why_Hackit_boxe2 {
+        margin-top: 30px;
+        width: 1360px;        
+    }
+    .Why_Hackit .Why_Hackit_boxe2 div {
+        width: 630px;        
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {    
+    .Header_Links {      
+      width: 900px;
+      margin-right: 20px;   
+      flex-grow: 1;    
+    }
+    .Headers .Logo_favicon{ 
+      margin-left: 20px;      
+      flex-grow: 3;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:1023px ) {
     .Header_Links{
         display: flex;
         justify-content: center;   
@@ -52,8 +100,6 @@ body{
     .Logo_favicon{
         margin-left: 50px;
     }
-}
-@media screen and (max-width:769px) {
     .Header_Links{
         display: none;
     }
@@ -93,6 +139,10 @@ body{
         background-color: #f05454;   
         border: 1px solid #EAEBF0; 
         gap: 20px;       
+    }
+    .Header_Links_Mob a{      
+        position: relative;                  
+        z-index: 999;        
     }
     .Hamburger{                     
         transition: 0.3s;
@@ -159,8 +209,29 @@ body{
         width: 30px;
         background-color: black;            
     }
+    .Hamburger{
+        transition: 0.3s;
+        display: block;
+        position: relative;
+        margin-right: 30px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;        
+    }
+    .Hamburger.active{
+        margin-right: 30px;
+    }
+    .Logo_favicon{
+        margin-left: 30px;
+    }
+    .Header_Links_Mob.active{        
+        width: 100%;        
+    }
+    .Header_Links_Mob.active{
+        width: 100%;
+    }
 }
-@media screen and (max-width:426px)  {
+/* @media screen and (min-width:375px) and (max-width:767px)  {
     .Hamburger{
         transition: 0.3s;
         display: block;
@@ -184,7 +255,7 @@ body{
     .Header_Links_Mob.active{
         width: 100%;
     }
-}
+} */
 
 
 /* -------------------Home_Part---------------------- */
@@ -222,7 +293,8 @@ body{
     border: none;
     border-radius: 6px;
 }
-@media screen and (max-width:1025px) {
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
     .Home_Part1 h2{   
         display: none;         
     }
@@ -239,33 +311,32 @@ body{
         width: 800px;
     }
 }
-@media screen and (max-width:769px) {     
-    .Home_Part{        
+@media screen and (min-width:768px) and (max-width:1023px)  {     
+    .Home_Part{                   
         z-index: -50000;  
-        position: relative;       
-        height: 645px;        
-    }
+        display: grid;            
+        height: auto;             
+    }         
     .Home_Part1 h2{   
         display: block;
     }
     .Home_Part1 button{
         display: block;     
     }
-    .Home_Part div:last-child img{
-        left: 80px;
+    .Home_Part  img{        
+        left: 100px;        
         position: relative;
-        width: 600px;
+        width: 500px;
     }
-    .Home_Part1{        
-        left: 60px;
-        bottom: 500px;        
+    .Home_Part1{          
+        margin-left: 50px;                
     }
 }
 
-@media screen and (max-width:426px){
-    .Home_Part {
+@media screen and (max-width:767px) and (min-width:375px){
+    .Home_Part {        
         height: auto;        
-        margin-top: 40px;
+        margin-top: 40px;        
     }
     .Home_Part div:last-child img{
         display: none;
@@ -281,14 +352,11 @@ body{
         margin-bottom: 24px;      
         width: 323px;               
         font-size: 36px;
-        font-weight: 700;
+        font-weight: 700;           
     }
-    .Home_Part1 p{
+    .Home_Part1 p{        
         display: none;
     }
-}
-
-@media screen and (max-width:375px) {
     .Home_Part1{           
         width: 340px; 
         margin: auto;        
@@ -297,6 +365,16 @@ body{
         position: relative;        
     }
 }
+/* 
+@media screen and (max-width:375px) {
+    .Home_Part1{           
+        width: 340px; 
+        margin: auto;        
+        left: 0;
+        top: 0;
+        position: relative;        
+    }
+} */
 
 
 
@@ -367,7 +445,32 @@ body{
 .Why_Hackit_boxe2 div img{
     padding-bottom: 24px;    
 }
-@media screen and (max-width:1025px) {
+
+@media screen and (max-width:1919px) and (min-width:1600px) {
+    .Why_Hackit .Why_Hackit_boxe1  {
+        width: 1420px;        
+    }    
+    .Why_Hackit .Why_Hackit_boxe1 div {                
+        width: 420px;        
+        height: auto;
+        justify-content: center;        
+        margin: auto;
+    }
+    .Why_Hackit .Why_Hackit_boxe1 div p {
+        width: 400px;
+    }   
+    .Why_Hackit .Why_Hackit_boxe2 {
+        width: 1400px;        
+    }
+    .Why_Hackit .Why_Hackit_boxe2 div {
+        width: 655px;        
+    } 
+    .Why_Hackit .Why_Hackit_boxe2 div p {
+        width: 600px;
+    }
+    
+}
+@media screen and (min-width:1024px) and (max-width:1439px) {
     .Why_Hackit_boxe1 div:last-child{
         display: block;
     }
@@ -398,16 +501,19 @@ body{
         margin: auto;
     }
 }
-@media screen and (max-width:769px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
     .Why_Hackit .Why_Hackit_desc{
         display: none;
     }
-    .Why_Hackit_boxe1 div{
+    .Why_Hackit_boxe1 div{                
         width: 310px;
         height: 250px;
     }
     .Why_Hackit_boxe1 div p{
          width: 286px;
+    }
+    .Why_Hackit_boxe1 div:last-child {        
+        display: block;
     }
     .Why_Hackit_boxe1{     
         margin: auto;                   
@@ -422,25 +528,50 @@ body{
     .Why_Hackit_boxe2 {
         width: 100%;        
     }
-    .Why_Hackit_boxe2 div  {
+    .Why_Hackit_boxe2 div{
         margin: auto;
         width: 672px;
     }
+    .Why_Hackit_boxe2 div:first-child {
+        display: none;
+    }
 }
 
-@media screen and (max-width:426px) {
-    .Why_Hackit {
+@media screen and (max-width:767px) and (min-width:375px) {
+    .Why_Hackit .Why_Hackit_desc {        
+        display: none;
+    }
+    .Why_Hackit {        
         margin-top: 46px;        
+    }
+    .Why_Hackit h1 {
+        text-align: center;        
+        font-size: 24px;
+        font-weight: 700;
     }
     .Why_Hackit_boxe1{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;  
+        width: 100%;      
+        gap: 24px;
+    }
+    .Why_Hackit_boxe1 div {
+        width: 320px;
+        margin: auto;             
+    }
+    .Why_Hackit_boxe1 div p {
+        width: 90%;
     }
     .Why_Hackit_boxe2{
-        width: 100%;               
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 20px;
     }
-    .Why_Hackit_boxe2 div {        
-        width: 318px;
+    .Why_Hackit_boxe2 div {  
+        height: auto;
+        margin: auto;        
+        width: 320px;        
     }
 }
 
@@ -522,6 +653,9 @@ body{
 }
 
 .Our_Customers_Logo .Bubbles{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     overflow: hidden;
     width: 100%;        
@@ -732,7 +866,29 @@ body{
     gap: 13px;
     cursor: pointer;
  }
- @media screen and (max-width:1441px) {
+
+
+ @media screen and (max-width:3840px) and (min-width:2256px) {
+    .Our_Customers_Logo .Bubbles{  
+        width: 1900px;        
+        margin: auto;        
+    }    
+ }
+@media screen and (max-width:2255px) and (min-width:1920px) { 
+    .Our_Customers_Logo .Bubbles{          
+        width: 1900px;
+        margin: auto;        
+    }
+}
+
+@media screen and (max-width:1919px) and (min-width:1600px) {
+    .Our_Customers_Logo .Bubbles {
+        width: 1500px;        
+        margin: auto;        
+    }
+}
+
+@media screen and (max-width:1441px) {
     .Our_Customers_Logo .Bubbles{ 
         margin: auto;
         overflow: hidden;
@@ -775,16 +931,16 @@ body{
         left: 50px;        
     }
  }
- @media screen and (max-width:426px) {      
-    .Our_Customers_Logo h2{
-        text-align: left;
+ @media screen and (min-width:375px) and (max-width:767px){      
+    .Our_Customers_Logo h2{        
+        text-align: center;
         margin-left: 14px;
     }  
     .Our_Customers_Logo .Bubbles{ 
         width: 425px;
         margin: auto;
         overflow: hidden;
-        width: auto;        
+        width: 375px;        
         position: relative;            
         height: 350px;
     }  
@@ -957,7 +1113,20 @@ body{
     
 }
 
-@media screen and (max-width:769px) {    
+@media screen and (min-width:768px) and (max-width:1023px) {   
+    .TandC{
+        width: 100%;        
+    }
+    .TandCImg{
+        /* display: none; */
+        width: auto;
+    }
+    .TandC_Inner{        
+        width:600px;
+        display: flex;        
+        justify-content: center;
+        margin: auto;
+    }         
     .TandC{
         background-image: url(./assets/background/Mask\ group.svg);
         background-size: 1500px ;        
@@ -981,8 +1150,12 @@ body{
     }
 }
 
-@media screen and (max-width:426px){
-    .TandCImg{
+@media screen and (min-width:375px) and (max-width:767px){
+    .TandC {        
+        width: 343px;        
+        margin: auto;
+    }
+    .TandCImg{        
         display: none;        
     }
     .TandC_Inner{            
@@ -990,10 +1163,11 @@ body{
         margin: auto;
         display: flex;
         justify-content: center;
-        align-items: center;             
+        align-items: center;
     }
     .TandCDTL{
-        margin-left: 160px;
+
+        /* margin-left: 160px; */
     }
     .TandCDTL h2{
         font-size: 24px;
@@ -1089,7 +1263,34 @@ body{
     align-items: center;
     border-radius: 10px;      
 }
-@media screen and (max-width:1025px){
+
+@media screen and (max-width:1919px) and (min-width:1600px) {
+    .Services .Service_Container {
+        width: 100%;        
+    }
+    .Services .Service_Container .SBox .SMImg {
+        width: 100%;        
+    }
+    .Services  .SBox {        
+        width: 500px;
+    }
+    .Service_Container .SBox .SBoxDisc {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px ) {
+    .Services .Service_Container {
+        width: 100%;
+        display: grid;        
+        grid-template-columns: 600px 600px;
+        place-content: center;
+        place-items: center;
+        grid-gap: 30px;
+    }  
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px){
     .Service_Container {
         display: grid;                
         grid-template-columns: repeat(2 , 400px);
@@ -1108,14 +1309,20 @@ body{
     .Service_Container .SBox .SBoxDisc{
         width: 300px;
     }
-    .Services .SseeMore{       
-        position: relative; 
-        left: 103px;
+    .Services .SseeMore{     
+        z-index: -20;    
+        margin-top: 50px;
+        left: 50%;
     }
 }
-@media screen and (max-width:769px){
+@media screen and (min-width:768px) and (max-width:1023px) {      
+      .Services .Service_DSC {
+        width: 90%;
+        text-align: justify;        
+      }
       .Service_Container{        
         width: 100%;
+        display: grid;
         grid-template-columns: 1fr;
       }  
       .Service_Container .SBox {
@@ -1137,9 +1344,11 @@ body{
 }
 
 /* ----prequel--- */
-@media screen and (max-width:426px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     .Service_Container{
+        display: grid;
         width: 100%;            
+        gap: 20px;
     }
     .Service_Container .SBox {
         width: 343px;                
@@ -1166,21 +1375,32 @@ body{
     .Services .SseeMore{
         position: relative;
         left: 40px;
-    }           
-}
-@media screen and (max-width:376px) {
+    }      
     .Services h2{
         margin-left: 20px;
     }
     .Services .Service_DSC{
         margin-left: 20px;
-        width: 300px;
+        width: 93%;
+    }
+    .Services .SseeMore {
+        position: relative;
+        left: 15px;
+    }     
+}
+/* @media screen and (max-width:376px) {
+    .Services h2{
+        margin-left: 20px;
+    }
+    .Services .Service_DSC{
+        margin-left: 20px;
+        width: 93%;
     }
     .Services .SseeMore {
         position: relative;
         left: 15px;
     }
-}
+} */
 
 
 /* ------------------------------------------------Industries-------------------------------------------------------- */
@@ -1246,29 +1466,41 @@ body{
     font-weight: 400;    
     width: 244px;
 }
-@media screen and (max-width:1025px) {    
+
+
+
+@media screen and (min-width:768px) and (max-width:1439px) {    
+    .Industries {        
+        width: 100%;
+    }
     .Industries .IndDet{
         margin-bottom: 50px;
-    }
+    }    
     .Industries .IndP1 {
         display: none;
     }
     .Industries .IndP2 {
+        width: 100%;
+        margin: auto;
         padding-bottom: 130px;
-        display: block;    
+        display: flex;    
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-    .Industries .IndP2 .IndCont {
+    .Industries .IndP2 .IndCont {            
         margin-left: 35px;
         margin-right: 35px;
         display: flex;
         justify-content: space-between ;
         align-items: center;
         margin-bottom: 102px;
+        width: 700px;     
     }
     .Industries .IndP2 .IndCont .IndImg {
         width: 266px;
     }
-    .Industries .IndP2 .IndCont p {
+    .Industries .IndP2 .IndCont p {        
         width: 100%;
     }
     .Industries .InduBox {
@@ -1277,20 +1509,38 @@ body{
     }
 }
 
-@media screen and (max-width:426px) {
-    .Industries h2{
-        text-align: left;
+@media screen and (min-width:375px) and (max-width:767px) {
+    .Industries {
+        background-color: white;
+    }
+    .Industries h2{        
+        text-align: center;
         margin-left: 37px;
     }
     .Industries .IndDet {
-        text-align: left;        
+        text-align: left;  
+        display: none;      
         width: 350px;       
+    }
+    .Industries .IndP1  .IndImg {
+        display: none;
     }
     .Industries .IndP2 .IndCont .IndImg {
         display: none;
     }
     .Industries .IndP2 .IndCont{
         margin-bottom: 0;
+    }
+    .Industries .Industries_Disc {
+        gap: 20px;
+    }
+    .Industries .Industries_Disc .InduBox p {
+        width: 100%;
+    }
+    .Industries .Industries_Disc .InduBox {
+        display: grid;
+        width: 345px;
+        margin: auto;        
     }
 }
 @media screen and (max-width:376px){
@@ -1365,7 +1615,10 @@ body{
     }
 }
 
-@media screen and (max-width:1025px ) {
+@media screen and (min-width:768px ) and (max-width:1439px){
+    .FeedBack .FeedDTL {
+        width: 100%;
+    }
     .FeedBack .comments {
         display: flex;
         flex-direction: column;
@@ -1393,7 +1646,7 @@ body{
     }
 }
 
-@media screen and (max-width:426px ) {   
+@media screen and (min-width:375px) and (max-width:767px) {   
     .FeedBack h2 {
         width: 343px;
         text-align: left;
@@ -1407,11 +1660,36 @@ body{
     .FeedBack .FeedDTL {        
         width: 343px;
         text-align: left;        
-        margin: auto;
-        
+        margin: auto;        
+    }
+    .FeedBack .comments {
+        display: grid;
+        width: 100%;
+    }
+    .FeedBack .comments .FBox {
+        width: 310px;        
+        height: 449px;
+    }
+    .FeedBack .comments .FBox .FeedBox {
+        width: 100% ;        
+    }
+    .FeedBack .comments .FBox .FeedBox .Logo {
+        width: 120px;        
+    }
+    .FeedBack .comments .FBox .FeedBox div {        
+        height: 80px;
+    }
+    .FeedBack .comments .FBox .FeedBox div h4 , .FeedBack .comments .FBox .FeedBox div p {
+        height: 50px;        
+        display: flex;        
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin: 0;
+        padding: 0;
     }
 }
-@media screen and (max-width:376px ) {
+/* @media screen and (max-width:376px ) {
     .FeedBack .comments {
         width: 100%;
     }
@@ -1438,7 +1716,7 @@ body{
         padding: 0;
     }
 
-}
+} */
 
 
 /* .FeedBack {
@@ -1647,7 +1925,32 @@ body{
     border: none;
     border-radius: 10px;
 }
-@media screen and (max-width:1025px) {
+
+@media screen and (max-width:1919px) and (min-width:1600px) {    
+    .Contact_Form .CForm_All{     
+        width: 100%;   
+        justify-content: center;
+        margin: auto;        
+        gap: 20px;
+    }
+    .Contact_Form .CForm_All img{
+        width: 600px;
+    }        
+}
+
+@media screen and (max-width:1599px) and (min-width:1440px) {    
+    .Contact_Form .CForm_All {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .Contact_Form .CForm_All img{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px) {    
     .Contact_Form .CForm_All {
         width: 100%;
     }
@@ -1657,28 +1960,43 @@ body{
     .Contact_Form .Form {
         margin: auto;
     }   
-}
-@media screen and (max-width:769px) {        
-    .Contact_Form .CForm_All {        
-        width: 706px;
-    }
-    .Contact_Form .Form {  
-        width: 100%;      
-    }
-    .Contact_Form .Form .PInfo input {
+    .Contact_Form .Form .PInfo input {        
         width: 270px;        
     }
 }
-@media screen and (max-width:426px) {        
-    .Contact_Form .CForm_All {        
-        width: 100%;
+/* @media screen and (min-width:768px) and (max-width:1023px) {     
+    
+    .Contact_Form .CForm_All {                
+        width: 706px;        
+    }
+    .Contact_Form .Form {          
+        width: 100%;      
+    }
+    .Contact_Form .Form .PInfo input {        
+        width: 270px;        
+    }
+} */
+@media screen and (min-width:375px) and (max-width:767px) {        
+    .Contact_Form {
+        width: 100%;        
+    }
+    .Contact_Form .CForm_All {
+        width: 90%;    
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact_Form .CForm_All img {
+        display: none;
     }
     .Contact_Form .Form {  
         border: none;
-        width: 100%;      
+        width: 300px;    
+        margin: auto;              
     }
     .Contact_Form .Form .PInfo input {
-        width: 343px;        
+        width: 100%;
+        margin: auto;
     }
     .Contact_Form .Form .PInfo {
         display: grid;
@@ -1795,7 +2113,7 @@ footer .F1 .FCT4 {
 footer .F1 .FCT5 {
     display: none;
 }
-@media screen and (max-width:1025px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
     footer .F1{        
         width: 768px;        
         margin: auto;
@@ -1826,7 +2144,7 @@ footer .F1 .FCT5 {
     }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (min-width:768px)  and (max-width:1023px) {
     footer .F1{        
         width: 626px;        
         margin: auto;
@@ -1842,7 +2160,7 @@ footer .F1 .FCT5 {
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     footer {
         display: none;
     }
@@ -1913,8 +2231,6 @@ footer .F1 .FCT5 {
         margin-top: 0;      
         grid-gap: 16px;        
     }
-}
-@media screen and (max-width:376px) {
     .Footer2 .FInner {
         width: 330px ;
         margin: auto;
@@ -1937,3 +2253,26 @@ footer .F1 .FCT5 {
         
     }
 }
+/* @media screen and (max-width:376px) {
+    .Footer2 .FInner {
+        width: 330px ;
+        margin: auto;
+    }
+    .Footer2 .FInner .FooterCNT {        
+        width: 100%;
+    }
+    .Footer2 .FooterCNT p{
+        color: #EAEBF0;    
+    }
+    .Footer2 .FooterCNT p{
+        width: 300px;        
+        padding: 0;
+
+        margin-right: 0;
+    }
+    .Footer2 .F2 {
+        width: 300px;
+        margin: auto;
+        
+    }
+} */

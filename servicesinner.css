@@ -37,6 +37,19 @@ a {
     display: none;
 }
 
+@media screen and (max-width:3840px) and (min-width:2256px) {
+    .Headers{
+        width: 1609px;        
+        margin: auto;
+    }    
+}
+
+@media screen and (max-width:2255px) and (min-width:1920px) {
+    .Headers {
+      width: 1900px;
+      margin: auto;
+    }
+}
 
 @media screen and (max-width:1025px) {
     .Header_Links{
