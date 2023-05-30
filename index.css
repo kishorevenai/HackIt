@@ -1062,7 +1062,7 @@ body{
     background-position: center;    
  }
 .TandC_Inner{
-    z-index: -20;
+/*     z-index: -20; */
     position: relative;
     width: 1380px;
     margin: auto;
