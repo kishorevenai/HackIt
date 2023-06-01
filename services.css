@@ -269,7 +269,7 @@ body{
   border-radius: 6px;
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1440px) {
   .Home_Part1 h2{   
       display: none;         
   }
