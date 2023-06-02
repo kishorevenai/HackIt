@@ -432,6 +432,9 @@ body{
 .ser_btn img{
   width: 12px;
 }
+.para{
+  height: 84px;
+}
 .ser_btn {
   color: #437EF7;    
   border-radius: 6px;  
