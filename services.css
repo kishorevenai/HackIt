@@ -440,7 +440,7 @@ body{
   align-items: center;
   background-color: transparent;
 }
-@media screen and (max-width:1917px) and (min-width:1600px) {
+@media screen and (max-width:1920px) and (min-width:1600px) {
   .row1_ser {    
     width: 1600px;
     margin: 0 auto;
