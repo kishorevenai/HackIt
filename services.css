@@ -429,8 +429,9 @@ body{
 .row1_ser .row_cont p {
   width: 100%;
 }
-
-
+.ser_btn img{
+  width: 12px;
+}
 .ser_btn {
   color: #437EF7;    
   border-radius: 6px;  
@@ -439,19 +440,30 @@ body{
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  width: 110px;
+  text-align: start;
 }
 @media screen and (max-width:1919px) and (min-width:1600px) {
   .row1_ser {    
     width: 1600px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: center;
     align-items: center;    
   }
   .row1_ser .det1_ser {    
-    margin: 20px;    
+    margin: 20px; 
+    width: 475px; 
+    height: 430px;  
   }
+.row1_ser .det1_ser .row_cont{
+  width: 450px;
+
+}
+.Home_Part1 {
+  margin-right: 100px;
+}
 }
 @media screen and (max-width:1599px) and (min-width:1440px) {
   .container_ser1 .container_tittel p {    
@@ -468,6 +480,13 @@ body{
   }  
   .row1_ser .det1_ser  {
     margin: 20px;
+  }
+  .Home_Part1{
+    width: 600px;
+
+  }
+  .Home_Part img{
+    width: 600px;
   }
 }
 
