@@ -399,8 +399,7 @@ body{
 /* -------------------------------------Why HackIt-------------------------------------- */
 
 .Why_Hackit{       
-    margin-top: 141px;
-    margin-bottom: 141px;    
+    margin-top: 141px;    
 }
 .Why_Hackit h1{    
     text-align: center;
@@ -920,21 +919,26 @@ body{
     animation-iteration-count: infinite;
 }
 
-.Our_Customers_Logo button{
+.Our_Customers_Logo button{    
     position: relative;
     z-index: -10;
     font-size: 15px;
     font-weight: 600;
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;        
-    height: auto;
-    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;            
+    height: 50px;
+    background-color: transparent;    
     border: none;
     color: #437EF7;
     gap: 13px;
+    border-radius: 8px;
     cursor: pointer;
+    margin-top: 100px;
+ }
+ .Our_Customers_Logo button p {
+    margin: 0   ;
  }
 
 
@@ -1109,8 +1113,40 @@ body{
     }   
  }
 
+/* ----------------------------------------------------------------Industries-------------------------------------------------------------------------- */
 
-
+.Industrie {  
+    margin-top: 184px;
+    padding: 57px 0 0   px 0;
+    background-color: #4E4E4E;  
+    width: 100%;    
+    height: 829px;
+}
+.Industrie h1 {
+    color: white;
+    text-align: center;
+}
+.Industrie .Idisc {
+    color: white;
+    text-align: center;
+}
+.Industrie .IndOpts {    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1760px;
+    margin: auto;    
+    gap: 24px;
+    margin-top: 60px;
+}
+.Industrie .IndOpts div {
+    border-radius: 8px;
+    padding-left: 10px  ;    
+    width: 553px;
+    height: 236px;
+    background-color: white;
+}
 
 
 
@@ -1120,16 +1156,17 @@ body{
  .TandC{        
     width: 100% ;
     margin: 121px 0 121px 0 ;
-    height: 672px;
+    height: 685px;
     display: flex;
     justify-content: center;
     align-items: center;    
-    background: url(./assets/background/Mask\ group.svg);
+    /* background: url(./assets/background/Mask\ group.svg); */    
     background-size: cover;
-    background-position: center;    
+    background-position: center;     
+    background-color: #4E4E4E;   
  }
-.TandC_Inner{
-    z-index: -20;
+.TandC_Inner{        
+    z-index: 0;
     position: relative;
     width: 1380px;
     margin: auto;
@@ -1139,10 +1176,15 @@ body{
 }
 .TandC_Inner h2{
     margin-bottom: 16px;
+    color: white;
 }
 .TandC_Inner .TandC_Disc{
     width: 532px;
     line-height: 24px;
+    color: white;
+}
+.TandC .BLTpoints {
+    color: white;
 }
 .TandC .BLTpoints div{
     display: flex;    
