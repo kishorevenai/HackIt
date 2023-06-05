@@ -14,14 +14,15 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.Headers{    
-    background-color: #ffffff;
+.Headers{     
+    background-color: white;
    top: 0;
    position: sticky;
    display: flex;
    justify-content: space-between;
    align-items: center;  
    height: 80px;
+   z-index: 99999;
 }
 .Header_Links{        
     display: flex;
@@ -261,29 +262,45 @@ body{
 /* -------------------Home_Part---------------------- */
 
 .Home_Part{
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to right , #6c353565 , #c50000c4);    
 }
-.Home_Part1{    
-    text-align: left;    
+.Home_Part .ThemeVideo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    z-index: -1;
+}
+.Home_Part1{  
+    color: white;
+    text-align: center;     
     display: grid;    
-    margin-right: 122px;
 }
-.Home_Part1 h2{    
+.Home_Part1 h2{      
+    text-align: center;
     margin-bottom: 0;    
     font-weight: 700;
     font-size: 52px;
     width: 624px;
+    margin: auto;
 }
-.Home_Part1 p{
-    margin-bottom: 16px;    
+.Home_Part1 p{    
+    text-align: center;    
     font-weight: 400;
     font-size: 16px;
-    width: 624px;    
+    width: 624px;   
+    margin: auto; 
+    margin-top: 18px;
 }
 .Home_Part1 button{
+    margin: auto;
+    margin-top: 48px;
     color: white;
     width: 121px;
     height: 46px;
@@ -663,7 +680,6 @@ body{
     position: relative;    
     height: 500px;    
     z-index: -10;
-    margin-bottom: 30px;
 }
 
 .Bubbles .Clogo1{      
@@ -1063,7 +1079,7 @@ body{
     background-position: center;    
  }
 .TandC_Inner{
-/*     z-index: -20; */
+    z-index: -20;
     position: relative;
     width: 1380px;
     margin: auto;
