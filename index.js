@@ -2,7 +2,15 @@
 const footerSubmit = document.querySelectorAll('.footerSubmit')
 const FooterEmail = document.querySelector('.FooterEmail')
 const F2 = document.querySelector('.F2')
-console.log("aosjaijsdn");
+const box3 = document.querySelectorAll('.Why_Hackit_boxe3 div .desc')
+
+
+// box3.forEach(item => item.addEventListener('mouseenter', () => {
+//     item.style.display = "block"    
+// }))
+// box3.forEach(item => item.addEventListener('mouseleave', () => {
+//     item.style.display = "none"
+// }))
 
 
 

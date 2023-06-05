@@ -400,7 +400,7 @@ body{
 
 .Why_Hackit{       
     margin-top: 141px;
-    margin-bottom: 141px;
+    margin-bottom: 141px;    
 }
 .Why_Hackit h1{    
     text-align: center;
@@ -463,6 +463,56 @@ body{
 .Why_Hackit_boxe2 div img{
     padding-bottom: 24px;    
 }
+
+.Why_Hackit_boxe3 {       
+    display: flex; 
+    justify-content: space-around;
+    align-items: start;
+    height: 400px;
+    width: 1700px;     
+    margin: auto;          
+}
+.Why_Hackit_boxe3 .box {
+    transition: 0.5s;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.274);
+    height: 160px;
+    width: 277px;
+    overflow: hidden;    
+}
+.Why_Hackit_boxe3 .line {
+    transition: 0.5s;
+    height: 1px;
+    width: 60%;
+    background-color: red;
+}
+
+.Why_Hackit_boxe3 .box hr {
+    width: 30%;
+}
+
+.Why_Hackit_boxe3 .box:hover {    
+    transition: 0.5s;
+    height: 360px;
+}
+
+.Why_Hackit_boxe3 div:hover .line {   
+    transition: 0.5s;
+    width: 270px;        
+}
+
+
+
+.Why_Hackit_boxe3 div .desc {
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+.Why_Hackit_boxe3 div img {
+    width: 68px;
+}
+
 
 @media screen and (max-width:1919px) and (min-width:1600px) {
     .Why_Hackit .Why_Hackit_boxe1  {
