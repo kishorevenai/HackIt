@@ -516,12 +516,12 @@ body{
     gap: 20px;
   }
   .container_ser1 .row1_ser .det1_ser {    
-    height: auto;
-    width: 343px;    
+    height: 100%;
+    width: 350px;    
     margin: auto;
   }
   .container_ser1 .row1_ser .det1_ser .row_cont {        
-    width: 299px;
+    width: 334px;
     margin: auto;
   }
   .container_ser1 .row1_ser .det1_ser .para {
