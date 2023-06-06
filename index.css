@@ -271,6 +271,9 @@ body{
     background: linear-gradient(to right , #6c353565 , #c50000c4);    
 }
 .Home_Part .ThemeVideo {
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;    
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
@@ -1643,7 +1646,7 @@ body{
 
 @media screen and (min-width:375px) and (max-width:767px) {
     .Industries {
-        background-color: white;
+        background-color: white;                
     }
     .Industries h2{        
         text-align: center;
@@ -1685,6 +1688,50 @@ body{
     }
 }
 
+
+/* -------------------------------OurSER--------------------------------------------- */
+
+.Arrow {
+    border: 1px solid #A5A5A5;
+    border-radius: 50%;
+    padding: 18px;  
+  }
+  .OurSER {   
+    margin-top: 127px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 127px;
+  }
+  .OurSER .SliderOuter {
+    width: 1500px;  
+    overflow: hidden;  
+  }
+  .OurSER .Slider {  
+    margin-left: 830px;
+    transition: 0.5s;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 118px;  
+    width: 1400px;        
+  }
+  .OurSER .Slider img{ 
+    border: 1px solid #C9C9C9; 
+    border-radius: 50%;  
+    width: 152px;
+    padding: 20px;
+  }
+  @media screen and (max-width:1025px) {
+    .OurCostomer {
+      display: none;
+    }
+    .OurSER {
+      display: none;
+    }  
+  }
+  
 
 /* ---------------------------------------Feedback------------------------------------- */
 .FeedBack { 
