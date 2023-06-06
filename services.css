@@ -407,7 +407,7 @@ body{
 
 .row1_ser {     
   display: grid;  
-  grid-template-columns: 1fr 1fr 1fr;      
+  grid-template-columns: 1fr 1fr 1fr 1fr;      
   margin: auto;
   place-items: center;
 }
