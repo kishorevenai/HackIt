@@ -1121,14 +1121,19 @@ body{
     background-color: #4E4E4E;  
     width: 100%;    
     height: 829px;
+    padding-top: 57px;
 }
 .Industrie h1 {
     color: white;
     text-align: center;
+    font-size: 36px;
+    font-weight: 700;
 }
 .Industrie .Idisc {
+    width: 779px;
     color: white;
     text-align: center;
+    margin: auto;
 }
 .Industrie .IndOpts {    
     display: flex;
@@ -1141,11 +1146,17 @@ body{
     margin-top: 60px;
 }
 .Industrie .IndOpts div {
+    display: flex;   
+    flex-direction: column;    
+    justify-content: center;    
     border-radius: 8px;
-    padding-left: 10px  ;    
+    padding-left: 15px;    
     width: 553px;
     height: 236px;
     background-color: white;
+}
+.Industrie .IndOpts div img {
+    width: 51px;
 }
 
 
@@ -1309,40 +1320,49 @@ body{
     margin: auto;
     width: 1760px;
     display: flex;
+    flex-flow:row;
     justify-content: space-around;
     align-items: center;
 }
 .Service_Container .SBox {    
     border: solid 1px #EAEBF0;
     border-radius: 10px;
-    height: 500px;
-    width: 537px;
+    /* height: 496px; */
+    width: 425px;    
+    /* background-color: #437EF7;    */
+}
+.Service_Container .SBox .SMImg {
+    width: 100%;
 }
 .Service_Container .SBox div{    
-    /* background-color: #437EF7; */
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* background-color: #437EF7; */    
+    display: flex;    
+    flex-direction: column;    
+    justify-content: space-between;    
     align-items: start;
-    margin-left: 32px;
-
+    height: 300px;    
+    /* margin-left: 20px;     */
+    /* background-color: #437EF7; */
+    /* background-color: #F05454; */
+    /* background-color: #8b8a8a; */    
 }
-.Service_Container .SBox .SBoxDisc{    
-    width: 473px;    
+.Service_Container .SBox h3 {
+    margin-left: 20px;
 }
-.Service_Container .SBox button {
-    cursor: pointer;
-    color: #437EF7;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 120px;    
-    background-color: transparent;
+.Service_Container .SBox .SBoxDisc{ 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left: 20px;   
+    width: 90%;    
+}
+.Service_Container .SBox div button {    
+    width: 320px;
+    border: 1px solid #F05454;
+    background-color: transparent; 
+    border-radius: 8px;       
+    margin: 0 auto 16px auto;    
+    color: black;
 }
 .Services .SseeMore{
     /* margin: 8px 95px 0 0;    
@@ -1667,9 +1687,9 @@ body{
 
 
 /* ---------------------------------------Feedback------------------------------------- */
-.FeedBack {
+.FeedBack { 
     margin-top: 191px;
-    margin-bottom: 191px;
+    margin-bottom: 191px;    
 }
 .FeedBack h2 , .FeedBack .FeedDTL {    
     text-align: center;
