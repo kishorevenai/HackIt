@@ -304,12 +304,12 @@ body{
 .Home_Part1 button{
     margin: auto;
     margin-top: 48px;
-    color: white;
+    color:#f05454;
     width: 121px;
     height: 46px;
     font-weight: 600;
     font-size: 15px;
-    background-color: #f05454;
+    background-color: #ffffff;
     border: none;
     border-radius: 6px;
 }
@@ -413,7 +413,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 52px;   
+    margin-bottom: 60px;   
 }
 
 .Why_Hackit_boxe1{    
@@ -468,11 +468,13 @@ body{
 
 .Why_Hackit_boxe3 {       
     display: flex; 
-    justify-content: space-around;
+    justify-content: center;
     align-items: start;
-    height: 400px;
-    width: 1700px;     
-    margin: auto;          
+    /* flex-wrap: wrap;    */
+    height: 500px; 
+    width: auto;         
+    margin: auto;
+    gap: 20px;         
 }
 .Why_Hackit_boxe3 .box {
     transition: 0.5s;
@@ -496,7 +498,7 @@ body{
 
 .Why_Hackit_boxe3 .box:hover {    
     transition: 0.5s;
-    height: 360px;
+    height: 90%;
 }
 
 .Why_Hackit_boxe3 div:hover .line {   
@@ -1322,12 +1324,13 @@ body{
 .Service_Container {
     margin: auto;
     width: 1760px;
-    display: flex;
-    flex-flow:row;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: row wrap;    
+    display: flex;    
+    justify-content: space-around;        
+    row-gap: 20px;
 }
-.Service_Container .SBox {    
+.Service_Container .SBox {   
+    /* flex-grow: 1;  */
     border: solid 1px #EAEBF0;
     border-radius: 10px;
     /* height: 496px; */
@@ -1335,7 +1338,8 @@ body{
     /* background-color: #437EF7;    */
 }
 .Service_Container .SBox .SMImg {
-    width: 100%;
+        margin: 20px;
+        width: 50px;       
 }
 .Service_Container .SBox div{    
     /* background-color: #437EF7; */    
@@ -1359,13 +1363,17 @@ body{
     margin-left: 20px;   
     width: 90%;    
 }
-.Service_Container .SBox div button {    
-    width: 320px;
-    border: 1px solid #F05454;
+.Service_Container .SBox div button {        
+    width: 110px;
+    border: none;    
     background-color: transparent; 
-    border-radius: 8px;       
-    margin: 0 auto 16px auto;    
-    color: black;
+    border-radius: 8px;           
+    margin-left: 20px;
+}
+.Service_Container .SBox div button a {
+    display: flex;
+    justify-content: space-between;
+    color: #437EF7;
 }
 .Services .SseeMore{
     /* margin: 8px 95px 0 0;    
@@ -1398,10 +1406,7 @@ body{
 @media screen and (max-width:1919px) and (min-width:1600px) {
     .Services .Service_Container {
         width: 100%;        
-    }
-    .Services .Service_Container .SBox .SMImg {
-        width: 100%;        
-    }
+    }    
     .Services  .SBox {        
         width: 500px;
     }
@@ -1691,6 +1696,13 @@ body{
 
 /* -------------------------------OurSER--------------------------------------------- */
 
+.Skillset {
+    margin-top: 93px;
+    text-align: center;
+}
+.SkillsetPara {
+    text-align: center;
+}
 .Arrow {
     border: 1px solid #A5A5A5;
     border-radius: 50%;
