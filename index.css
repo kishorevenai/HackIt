@@ -2106,7 +2106,9 @@ body{
 }
 .Contact_Form .Form .Button {    
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    align-items: center;        
+    width: 800px;
 }
 .Contact_Form .Form .Button button{
     color: #FFFFFF;
@@ -2115,6 +2117,10 @@ body{
     height: 46px;
     border: none;
     border-radius: 10px;
+}
+
+.RobotCheck {
+    display: flex;
 }
 
 @media screen and (max-width:1919px) and (min-width:1600px) {    
