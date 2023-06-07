@@ -523,417 +523,423 @@ body p {
 
 /* ---------------------------------------Our Customers------------------------------------------ */
 .Our_Customers_Logo{
-  height: auto;    
-  position: relative;
-  text-align: center;    
+    height: auto;    
+    position: relative;
+    text-align: center;    
 }
 .Our_Customers_Logo h2{   
-  margin-bottom: 16px;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  position: relative;
-  z-index: -10;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    z-index: -10;
 }
 .Our_Customers_Logo p {
-  margin-bottom: 21px;
-  font-size: 16px;
-  font-weight: 400;
+    margin-bottom: 21px;
+    font-size: 16px;
+    font-weight: 400;
 }
 .Our_Customers_Logo .Bubbles img{    
-  border: solid 1px rgb(173, 171, 171);
-  border-radius:50% ;
-  position: absolute;
-  transition: 2s;
+    border: solid 1px rgb(173, 171, 171);
+    border-radius:50% ;
+    position: absolute;
+    transition: 2s;
 }
 
 .Our_Customers_Logo .Bubbles{ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  overflow: hidden;
-  width: 100%;        
-  position: relative;    
-  height: 500px;    
-  z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;        
+    position: relative;    
+    height: 500px;    
+    z-index: -10;
 }
 
 .Bubbles .Clogo1{      
-  display: flex;  
-  justify-content: center;    
-  top: 45px;
-  left: 134px;
-  height: 146px; 
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;         
+    display: flex;  
+    justify-content: center;    
+    top: 45px;
+    left: 134px;
+    height: 150px;
+    width: 150px;
+    object-fit: contain; 
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;         
 }
 .Bubbles .Clogo2{        
-  width: 113px;
-  top: 219px;
-  left: 94px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+    width: 113px;
+    top: 219px;
+    left: 94px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .Bubbles .Clogo3{    
-  width: 113px;
-  top: 173px;
-  left: 283px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 113px;
+    top: 173px;
+    left: 283px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo4{
-  width: 152px;    
-  top: 336px;
-  left: 244px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+    width: 152px;    
+    top: 336px;
+    left: 244px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .Bubbles .Clogo5 {        
-  width: 108px;
-  top: 290px;
-  left: 433px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 108px;
+    top: 290px;
+    left: 433px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo6{    
-  width: 113px;
-  top: 80px;
-  left: 433px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 113px;
+    top: 80px;
+    left: 433px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo7{        
-  width: 152px;
-  top: 169px;
-  left: 622px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+    width: 152px;
+    top: 169px;
+    left: 622px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .Bubbles .Clogo8{    
-  width: 109px;
-  top: 381px;
-  left: 642px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 109px;
+    top: 381px;
+    left: 642px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo9{    
-  width: 113px;
-  top: 80px;
-  left: 811px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 113px;
+    top: 80px;
+    left: 811px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo10{    
-  width: 152px;
-  top: 286px;
-  left: 843px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+    width: 152px;
+    top: 286px;
+    left: 843px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .Bubbles .Clogo11{
-  background-color: #fe0000;
-  width: 113px;
-  top: 126px;
-  left: 1008px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    background-color: #fe0000;
+    width: 113px;
+    top: 126px;
+    left: 1008px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo12{        
-  width: 152px;
-  top: 286px;
-  left: 1053px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+    width: 152px;
+    top: 286px;
+    left: 1053px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .Bubbles .Clogo13{        
-  width: 147px;
-  top: 64px;
-  left: 1273px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 147px;
+    top: 64px;
+    left: 1273px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo14{        
-  width: 112px;
-  top: 232px;
-  left: 1244px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 112px;
+    top: 232px;
+    left: 1244px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 
 }
 .Bubbles .Clogo15{        
-  width: 112px;
-  top: 86px;
-  left: 1509px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;  
+    width: 112px;
+    top: 86px;
+    left: 1509px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo16{        
-  width: 111px;
-  top: 290px;
-  left: 1509px;
-  animation-name: bounce-back;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;    
-
+    width: 111px;
+    top: 290px;
+    left: 1509px;
+    animation-name: bounce-back;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;    
+ 
 }
 .Bubbles .Clogo17{        
-  width: 152px;
-  top: 177px;
-  left: 1650px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+    width: 152px;
+    top: 177px;
+    left: 1650px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .Bubbles .Clogo18{            
-  width: 113px;
-  top: 379px;
-  left: 1679px;
-  animation-name: bounce;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;    
-  animation-fill-mode: forwards;    
-  animation-iteration-count: infinite;
+    width: 113px;
+    top: 379px;
+    left: 1679px;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;    
+    animation-fill-mode: forwards;    
+    animation-iteration-count: infinite;
 }
 
-.Our_Customers_Logo button{
-  position: relative;
-  z-index: -10;
-  font-size: 15px;
-  font-weight: 600;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;        
-  height: auto;
-  background-color: transparent;
-  border: none;
-  color: #437EF7;
-  gap: 13px;
-  cursor: pointer;
-}
+.Our_Customers_Logo button{    
+    position: relative;
+    z-index: -10;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;            
+    height: 50px;
+    background-color: transparent;    
+    border: none;
+    color: #437EF7;
+    gap: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 100px;
+ }
+ .Our_Customers_Logo button p {
+    margin: 0   ;
+ }
 
 
-@media screen and (max-width:3840px) and (min-width:2256px) {
-  .Our_Customers_Logo .Bubbles{  
-      width: 1900px;        
-      margin: auto;        
-  }    
-}
+ @media screen and (max-width:3840px) and (min-width:2256px) {
+    .Our_Customers_Logo .Bubbles{  
+        width: 1900px;        
+        margin: auto;        
+    }    
+ }
 @media screen and (max-width:2255px) and (min-width:1920px) { 
-  .Our_Customers_Logo .Bubbles{          
-      width: 1900px;
-      margin: auto;        
-  }
+    .Our_Customers_Logo .Bubbles{          
+        width: 1900px;
+        margin: auto;        
+    }
 }
 
 @media screen and (max-width:1919px) and (min-width:1600px) {
-  .Our_Customers_Logo .Bubbles {
-      width: 1500px;        
-      margin: auto;        
-  }
+    .Our_Customers_Logo .Bubbles {
+        width: 1500px;        
+        margin: auto;        
+    }
 }
 
 @media screen and (max-width:1441px) {
-  .Our_Customers_Logo .Bubbles{ 
-      margin: auto;
-      overflow: hidden;
-      width: auto;        
-      position: relative;    
-      height: 500px;    
-  }
-}
-@media screen and (max-width:1025px) {    
-  .Our_Customers_Logo .Our_Customers_Desc{
-      display: none;
-  }    
-  .Our_Customers_Logo .Bubbles{ 
-      margin: auto;
-      overflow: hidden;
-      width: auto;        
-      position: relative;    
-      height: 500px;    
-  }
-  .Bubbles .Clogo11{
-      display: none;
-  }
-}
-@media screen and (max-width:769px) {    
-  .Our_Customers_Logo button{
-      width: 500px;        
-  }    
-  .Our_Customers_Logo .Bubbles{ 
-      margin: auto;
-      overflow: hidden;
-      width: auto;        
-      position: relative;    
-      height: 500px;    
-  }
-  .Bubbles .Clogo7{
-      left: 600px;        
-  }
-  .Bubbles .Clogo1{
-      top: 20px;
-      left: 50px;        
-  }
-}
-@media screen and (min-width:375px) and (max-width:767px){      
-  .Our_Customers_Logo h2{        
-      text-align: center;
-      margin-left: 14px;
-  }  
-  .Our_Customers_Logo .Bubbles{ 
-      width: 425px;
-      margin: auto;
-      overflow: hidden;
-      width: 375px;        
-      position: relative;            
-      height: 350px;
-  }  
-  .Bubbles .Clogo1{
-      display: none;
-  }
-  .Bubbles .Clogo2{        
-      display: none;
-  }
-  .Bubbles .Clogo3{
-      display: none;
-  }
-  .Bubbles .Clogo4{
-      display: none;
-  }        
-  .Bubbles .Clogo5{        
-      top: 154px;
-      left: 15px;
-      width: 69px;
-  }    
-  .Bubbles .Clogo6{   
-      width: 72px;     
-      top: 20px;
-      left: 13px;                
-  }    
-  .Bubbles .Clogo7{        
-      width: 92px;
-      top: 78px;
-      left: 135px;                
-  }   
-  .Bubbles .Clogo8{
-      top: 210px;
-      left: 134px;        
-  }
-  .Bubbles .Clogo9{        
-      width: 72px;
-      top: 19.7px;
-      left: 252.63px;                
-  }
-  .Bubbles .Clogo10{        
-      width: 91px;
-      top: 152px;
-      left: 276px;        
-  }
-  .Our_Customers_Logo button{
-      width: 100%;
-  }
-}
-@media screen and (max-width:376px) {    
-  .Our_Customers_Logo .Bubbles{ 
-      margin: auto;
-      overflow: hidden;
-      width: auto;        
-      position: relative;    
-      height: 400px;    
-  
-  }  
-  .Bubbles .Clogo1{
-      display: none;
-  }
-  .Bubbles .Clogo2{        
-      display: none;
-  }
-  .Bubbles .Clogo3{
-      display: none;
-  }
-  .Bubbles .Clogo4{
-      display: none;
-  }        
-  .Bubbles .Clogo6{        
-      top: 20px;
-      left: 20px;        
-  }
-}
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+ }
+ @media screen and (max-width:1025px) {    
+    .Our_Customers_Logo .Our_Customers_Desc{
+        display: none;
+    }    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+    .Bubbles .Clogo11{
+        display: none;
+    }
+ }
+ @media screen and (max-width:769px) {    
+    .Our_Customers_Logo button{
+        width: 500px;        
+    }    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 500px;    
+    }
+    .Bubbles .Clogo7{
+        left: 600px;        
+    }
+    .Bubbles .Clogo1{
+        top: 20px;
+        left: 50px;        
+    }
+ }
+ @media screen and (min-width:375px) and (max-width:767px){      
+    .Our_Customers_Logo h2{        
+        text-align: center;
+        margin-left: 14px;
+    }  
+    .Our_Customers_Logo .Bubbles{ 
+        width: 425px;
+        margin: auto;
+        overflow: hidden;
+        width: 375px;        
+        position: relative;            
+        height: 350px;
+    }  
+    .Bubbles .Clogo1{
+        display: none;
+    }
+    .Bubbles .Clogo2{        
+        display: none;
+    }
+    .Bubbles .Clogo3{
+        display: none;
+    }
+    .Bubbles .Clogo4{
+        display: none;
+    }        
+    .Bubbles .Clogo5{        
+        top: 154px;
+        left: 15px;
+        width: 69px;
+    }    
+    .Bubbles .Clogo6{   
+        width: 72px;     
+        top: 20px;
+        left: 13px;                
+    }    
+    .Bubbles .Clogo7{        
+        width: 92px;
+        top: 78px;
+        left: 135px;                
+    }   
+    .Bubbles .Clogo8{
+        top: 210px;
+        left: 134px;        
+    }
+    .Bubbles .Clogo9{        
+        width: 72px;
+        top: 19.7px;
+        left: 252.63px;                
+    }
+    .Bubbles .Clogo10{        
+        width: 91px;
+        top: 152px;
+        left: 276px;        
+    }
+    .Our_Customers_Logo button{
+        width: 100%;
+    }
+ }
+ @media screen and (max-width:376px) {    
+    .Our_Customers_Logo .Bubbles{ 
+        margin: auto;
+        overflow: hidden;
+        width: auto;        
+        position: relative;    
+        height: 400px;    
+    
+    }  
+    .Bubbles .Clogo1{
+        display: none;
+    }
+    .Bubbles .Clogo2{        
+        display: none;
+    }
+    .Bubbles .Clogo3{
+        display: none;
+    }
+    .Bubbles .Clogo4{
+        display: none;
+    }        
+    .Bubbles .Clogo6{        
+        top: 20px;
+        left: 20px;        
+    }
+ }
 
 @keyframes bounce {
- 0%{
-   transform: translateY(0px);
- }
- 50%{
-  transform: translateY(-20px);
- }
- 100%{
-  transform: translateY(0px);
- }   
+   0%{
+     transform: translateY(0px);
+   }
+   50%{
+    transform: translateY(-20px);
+   }
+   100%{
+    transform: translateY(0px);
+   }   
 }
 @keyframes bounce-back {
-  0%{
-    transform: translateY(0px);
-  }
-  50%{
-   transform: translateY(10px);
-  }
-  100%{
-   transform: translateY(0px);
-  }   
-}
-
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+     transform: translateY(10px);
+    }
+    100%{
+     transform: translateY(0px);
+    }   
+ }
 
 
 
