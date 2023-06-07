@@ -297,7 +297,7 @@ a {
         width: 70%;
     }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
     .CompanyDTL {
         width: 100%;
         display: grid;        
@@ -312,8 +312,6 @@ a {
     .CompanyDTL .CompanyDTL_Header p {
         display: none;
     }
-}
-@media screen and (max-width: 426px) {
     .CompanyDTL {        
         margin: 0;
         margin-top: 49px;
@@ -326,6 +324,19 @@ a {
         width: 350px;        
     }
 }
+/* @media screen and (max-width: 426px) {
+    .CompanyDTL {        
+        margin: 0;
+        margin-top: 49px;
+    }
+    .CompanyDTL img {
+        display: none;     
+    }
+    .CompanyDTL .CompanyDTL_Header h1 {           
+        font-size: 36px;
+        width: 350px;        
+    }
+} */
 
 
 
@@ -348,6 +359,16 @@ a {
     margin-bottom: 26px;
 }
 
+@media screen and (max-width:1439px) and (min-width:1024px){
+   .AboutHI {    
+      width: 1024px;
+      margin: auto;
+   } 
+   .AboutHI p {
+       width: 100%;
+   }
+}
+
 @media screen and (max-width:1025px) {
     .AboutHI p {    
        width: 900px;
@@ -366,7 +387,7 @@ a {
        font-weight: 400;
     }
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:767px) and (min-width:375px) {
     .AboutHI {
         margin-top: 26px;
     }
@@ -412,6 +433,12 @@ a {
     font-size: 16px;
     font-weight: 400;
 }
+@media screen and (max-width:1439px) and (min-width:1024px) {
+    
+    .MandV {
+        width: 900px;        
+    }
+}
 
 @media screen and (max-width:1025px) {
     .MandV {
@@ -429,7 +456,7 @@ a {
     }    
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:767px) {
     .MandV {     
         width: 100%;        
         display: flex;
@@ -437,7 +464,7 @@ a {
         justify-content: space-between;
         align-items: center;
         margin-top: 24px;
-        margin-bottom: 58px;
+
     }
     .MandV div {
         width: 289px;
@@ -449,7 +476,6 @@ a {
     }
 }
 /* ---------------------------------------BnchMark------------------------------------------------------ */
-
 
   .port_container1 {
     margin: 100px 0px 90px 0px;
@@ -593,10 +619,6 @@ a {
  }
   }
   
-  
-
-
-
 
 /* ----------------------------Footer------------------------------------------------------------- */
 .Footer2
