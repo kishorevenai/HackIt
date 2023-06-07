@@ -457,18 +457,20 @@ a {
     }    
 }
 
-@media screen and (max-width:767px) {
-    .MandV {     
-        width: 100%;        
+@media screen and (max-width:767px) and (min-width:375px){
+    .MandV {                
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin-top: 24px;
-
+        height: 750px;
     }
-    .MandV div {
-        width: 289px;
+    
+    .MandV div {        
+        height: auto;
+        width: 289px;        
         margin: auto;
     }
     .MandV p {
@@ -545,6 +547,9 @@ a {
     }
   }
   @media screen and (min-width: 375px) and (max-width:1023px) {
+    .port_container1 {
+        margin-top: 50px;
+    }
     .banner_port {
       width: 100%;
       flex-direction: column;
@@ -660,11 +665,11 @@ footer .F1 .FCT3 {
     display: grid;
     
 }
-footer .F1 .FCT3 form {       
+footer .F1 .FCT3 div {       
      display: flex;
      width: 302px;
 }
-footer .F1 .FCT3 form button {
+footer .F1 .FCT3 div button {
     color: #EAEBF0;
     font-size: 15px;
     font-weight: 600;
@@ -675,7 +680,7 @@ footer .F1 .FCT3 form button {
     border-bottom-right-radius: 10px;
     height: 46px;
 }
-footer .F1 .FCT3 form input {
+footer .F1 .FCT3 div input {
     height: 44px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
