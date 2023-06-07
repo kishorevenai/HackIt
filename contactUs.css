@@ -560,6 +560,7 @@ a {
         display: grid;
     }
 }
+
 /* ----------------------------Footer------------------------------------------------------------- */
 .Footer2
 {
@@ -577,34 +578,20 @@ footer .F1 {
     justify-content: space-between;
     align-items: center;    
 }
-footer .F1 div:first-child {    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 180px;    
-}
-
-footer .F1 div:first-child img {
-    width: 136px;
-}
-
 footer .F1 div:first-child p{
     color: #EAEBF0;
-    width: 247px;  
-    display: grid;  
+    width: 247px;    
 }
-footer .F1 .FCT1,footer .F1 .FCT2 , footer .F1 .FCT3{        
+footer .F1 .FCT1,footer .F1 .FCT2{    
     height: 180px;    
     color: #EAEBF0;
-    display: flex;
-    flex-direction: column;
+    /* display: grid;
     justify-content: space-between;
-    align-items: left;
+    align-items: center; */
 }
 footer .F1 .FCT3 {
-    color: #EAEBF0;  
-    height: 157px;  
+    color: #EAEBF0;
+    height: auto;
     width: 302px;    
 }
 footer .F1 .FCT3 div {       
@@ -638,8 +625,8 @@ footer .F2 {
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    width: 1310px; 
-    height: auto; 
+    width: 1310px;  
+    height: auto    ;
     margin: auto;
     margin-top: 97px;   
     padding-bottom: 50px;    
@@ -665,7 +652,6 @@ footer .F1 .FCT4 {
 footer .F1 .FCT5 {
     display: none;
 }
-
 @media screen and (min-width:1024px) and (max-width:1439px) {
     footer .F1{        
         width: 768px;        
@@ -693,12 +679,11 @@ footer .F1 .FCT5 {
         width: 768px;
     }
     footer .F2 .Developer p {        
-        margin-top: 60px;        
+        margin-top: 60px;
     }
 }
 
-
-@media screen and (min-width:768px)  and (max-width:1023px){
+@media screen and (min-width:768px)  and (max-width:1023px) {
     footer .F1{        
         width: 626px;        
         margin: auto;
@@ -706,15 +691,6 @@ footer .F1 .FCT5 {
         grid-template-columns: 1fr 1fr;
         grid-gap: 62px;
     } 
-    footer .F1 div:first-child {    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        height: 162px;    
-        width: 222px;
-        
-    }
     footer .F2 {        
         width: 626px;
     }   
@@ -723,7 +699,7 @@ footer .F1 .FCT5 {
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     footer {
         display: none;
     }
@@ -734,13 +710,8 @@ footer .F1 .FCT5 {
     }
     .Footer2 .FInner{           
         width: 400px;
-        display: flex;        
-        justify-content: space-between;
-        align-items: start;
-        flex-direction: column;
+        display: block;
         margin: auto;
-        height: 675px;
-
     }
     .Footer2 .FooterCNT p{
         color: #EAEBF0;
@@ -755,15 +726,10 @@ footer .F1 .FCT5 {
     }  
     .Footer2    .FCT3 {
         color: #EAEBF0;
+        height: auto;
         width: 302px;    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        height: 152px;        
-        
     }
-    .Footer2    .FCT3 div {       
+    .Footer2    .FCT3 div{       
          display: flex;
          width: 302px;
     }
@@ -793,7 +759,7 @@ footer .F1 .FCT5 {
         width: 262px;
         display: grid;
         place-items: center;
-        margin: 0 auto;                   
+        margin: auto;
     }
     .Footer2 .F2 .Freserved {
         text-align: center;
@@ -804,32 +770,25 @@ footer .F1 .FCT5 {
         margin-top: 0;      
         grid-gap: 16px;        
     }
-}
-@media screen and (max-width:376px) {
     .Footer2 .FInner {
         width: 330px ;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        flex-direction: column  ;
-        
-    }    
+    }
     .Footer2 .FInner .FooterCNT {        
-        width: 100%;                
+        width: 100%;
     }
     .Footer2 .FooterCNT p{
-        color: #EAEBF0;  
-        width: 343px;  
+        color: #EAEBF0;    
     }
-    .Footer2 .FooterCNT p{        
-        padding: 0; 
+    .Footer2 .FooterCNT p{
+        width: 300px;        
+        padding: 0;
+
         margin-right: 0;
     }
     .Footer2 .F2 {
-        width: 262px;
-        display: grid;
-        place-items: center;
-        margin: 0px auto;                   
+        width: 300px;
+        margin: auto;
+        
     }
 }
