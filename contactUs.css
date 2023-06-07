@@ -232,7 +232,7 @@ body {
 
 
 /* ----------------------------------------Contact Us------------------------------------------------- */
-.Contact_Us {       
+.Contact_Us {           
     margin-top: 50px; 
     margin-bottom: 0;
     padding-bottom: 0;
@@ -257,11 +257,16 @@ body {
     align-items: center;    
 }
 
-@media screen and (max-width:1919px) and (min-width:1600px) {
+@media screen and (max-width:1919px) and (min-width:1600px) {    
     .Contact_Us .CUP1 {
+        width: 100%;
+        margin: auto;         
         display: flex;
         justify-content: center;
-    }       
+    }
+    .Contact_Us .CUP1 img {
+        width: 700px;
+    }
 }
 
 @media screen and (max-width:1441px) {
@@ -303,7 +308,7 @@ body {
         margin-left: 256px;
     }    
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:767px) and (min-width:375px) {
     .Contact_Us img {
         display: none;
     }
@@ -395,7 +400,7 @@ body {
         font-weight: 400;
     } */
 }
-@media screen and (max-width:426px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     .CViewPort {        
         height: 606px;        
         width: 343px;
@@ -509,6 +514,18 @@ body {
         width: 270px;        
     }
 }
+/* @media screen and (min-width:768px) and (max-width:1023px) {     
+    
+    .Contact_Form .CForm_All {                
+        width: 706px;        
+    }
+    .Contact_Form .Form {          
+        width: 100%;      
+    }
+    .Contact_Form .Form .PInfo input {        
+        width: 270px;        
+    }
+} */
 @media screen and (min-width:375px) and (max-width:767px) {        
     .Contact_Form {
         width: 100%;        
