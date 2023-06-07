@@ -535,8 +535,8 @@ body p {
   position: relative;
   z-index: -10;
 }
-.Our_Customers_Logo p {  
-  margin: 0;
+.Our_Customers_Logo p {
+  margin-bottom: 21px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -548,6 +548,9 @@ body p {
 }
 
 .Our_Customers_Logo .Bubbles{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   overflow: hidden;
   width: 100%;        
@@ -562,7 +565,6 @@ body p {
   top: 45px;
   left: 134px;
   height: 146px; 
-  width: 146px;
   animation-name: bounce-back;
   animation-duration: 5s;
   animation-timing-function: ease-out;    
@@ -571,7 +573,6 @@ body p {
 }
 .Bubbles .Clogo2{        
   width: 113px;
-  height: 113px;
   top: 219px;
   left: 94px;
   animation-name: bounce;
@@ -582,7 +583,6 @@ body p {
 }
 .Bubbles .Clogo3{    
   width: 113px;
-  height: 113px;
   top: 173px;
   left: 283px;
   animation-name: bounce-back;
@@ -592,8 +592,7 @@ body p {
   animation-iteration-count: infinite;  
 }
 .Bubbles .Clogo4{
-  width: 152px; 
-  height: 152px;   
+  width: 152px;    
   top: 336px;
   left: 244px;
   animation-name: bounce;
@@ -604,7 +603,6 @@ body p {
 }
 .Bubbles .Clogo5 {        
   width: 108px;
-  height: 108px;
   top: 290px;
   left: 433px;
   animation-name: bounce-back;
@@ -615,7 +613,6 @@ body p {
 }
 .Bubbles .Clogo6{    
   width: 113px;
-  height: 113px;
   top: 80px;
   left: 433px;
   animation-name: bounce-back;
@@ -626,7 +623,6 @@ body p {
 }
 .Bubbles .Clogo7{        
   width: 152px;
-  height: 152px;
   top: 169px;
   left: 622px;
   animation-name: bounce;
@@ -637,7 +633,6 @@ body p {
 }
 .Bubbles .Clogo8{    
   width: 109px;
-  height: 109px;
   top: 381px;
   left: 642px;
   animation-name: bounce-back;
@@ -648,7 +643,6 @@ body p {
 }
 .Bubbles .Clogo9{    
   width: 113px;
-  height: 113px;
   top: 80px;
   left: 811px;
   animation-name: bounce-back;
@@ -659,7 +653,6 @@ body p {
 }
 .Bubbles .Clogo10{    
   width: 152px;
-  height: 152px;
   top: 286px;
   left: 843px;
   animation-name: bounce;
@@ -671,7 +664,6 @@ body p {
 .Bubbles .Clogo11{
   background-color: #fe0000;
   width: 113px;
-  height: 113px;
   top: 126px;
   left: 1008px;
   animation-name: bounce-back;
@@ -682,7 +674,6 @@ body p {
 }
 .Bubbles .Clogo12{        
   width: 152px;
-  height: 152px;
   top: 286px;
   left: 1053px;
   animation-name: bounce;
@@ -693,7 +684,6 @@ body p {
 }
 .Bubbles .Clogo13{        
   width: 147px;
-  height: 147px;
   top: 64px;
   left: 1273px;
   animation-name: bounce-back;
@@ -704,7 +694,6 @@ body p {
 }
 .Bubbles .Clogo14{        
   width: 112px;
-  height: 112px;
   top: 232px;
   left: 1244px;
   animation-name: bounce-back;
@@ -716,7 +705,6 @@ body p {
 }
 .Bubbles .Clogo15{        
   width: 112px;
-  height: 112px;
   top: 86px;
   left: 1509px;
   animation-name: bounce-back;
@@ -727,7 +715,6 @@ body p {
 }
 .Bubbles .Clogo16{        
   width: 111px;
-  height: 111px;
   top: 290px;
   left: 1509px;
   animation-name: bounce-back;
@@ -739,7 +726,6 @@ body p {
 }
 .Bubbles .Clogo17{        
   width: 152px;
-  height: 152px;
   top: 177px;
   left: 1650px;
   animation-name: bounce;
@@ -750,7 +736,6 @@ body p {
 }
 .Bubbles .Clogo18{            
   width: 113px;
-  height: 113px;
   top: 379px;
   left: 1679px;
   animation-name: bounce;
@@ -777,11 +762,18 @@ body p {
   cursor: pointer;
 }
 
+
 @media screen and (max-width:3840px) and (min-width:2256px) {
   .Our_Customers_Logo .Bubbles{  
       width: 1900px;        
       margin: auto;        
   }    
+}
+@media screen and (max-width:2255px) and (min-width:1920px) { 
+  .Our_Customers_Logo .Bubbles{          
+      width: 1900px;
+      margin: auto;        
+  }
 }
 
 @media screen and (max-width:1919px) and (min-width:1600px) {
@@ -834,16 +826,16 @@ body p {
       left: 50px;        
   }
 }
-@media screen and (max-width:426px) {      
-  .Our_Customers_Logo h2{
-      text-align: left;
+@media screen and (min-width:375px) and (max-width:767px){      
+  .Our_Customers_Logo h2{        
+      text-align: center;
       margin-left: 14px;
   }  
   .Our_Customers_Logo .Bubbles{ 
       width: 425px;
       margin: auto;
       overflow: hidden;
-      width: auto;        
+      width: 375px;        
       position: relative;            
       height: 350px;
   }  
@@ -941,7 +933,6 @@ body p {
    transform: translateY(0px);
   }   
 }
-
 
 
 
