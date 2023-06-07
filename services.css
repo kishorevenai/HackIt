@@ -318,10 +318,7 @@ body{
   }
   .Home_Part1{           
     width: 400px; 
-    margin: auto;        
-    left: 0;
-    top: 0;
-    position: relative;        
+    margin: auto;             
   }
   .Home_Part .Home_Part1 p {  
     margin-top: 0;  
@@ -341,50 +338,11 @@ body{
   .Home_Part1{           
       width: 340px; 
       margin: auto;        
-      left: 0;
-      top: 0;
-      position: relative;        
+        
   }
 }
 
-/* @media only screen and (max-width: 1230px) {
-  .banner_cont {
-    width: 450px;
-    height: 150px;
-  }
-  .banner_img {
-    width: 420px;
-    margin-top: 82px;
-  }
-  .container_tittel {
-    margin: auto;
-    width: 890px;
-    margin-bottom: 40px;
-  }
-  .banner_cont h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .row1_ser {    
-    grid-template-columns: 310px 310px 310px;
-  }
-  .det1_ser {
-    margin: auto;
-    width: 315px;    
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-  }
-  .row_img {
-    width: 100%;
-    height: auto;
-  }
-  .row_cont {
-    margin: auto;
-    width: 300px;
-    height: 278px;
-    padding: 0 0 0 10px;   
-  }
-} */
+
 
 
 
