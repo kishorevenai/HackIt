@@ -618,8 +618,7 @@ a {
     width: 137px;
  }
   }
-  
-/* ----------------------------Footer------------------------------------------------------------- */
+/* ----------------------------Footer------------------------------------------------------------- */  
 .Footer2
 {
     display: none;
@@ -636,6 +635,12 @@ footer .F1 {
     justify-content: space-between;
     align-items: center;    
 }
+footer .F1 div:first-child{      
+    display: grid;    
+    height: 180px;
+    justify-content: space-between;
+    align-items: center ;
+}
 footer .F1 div:first-child p{
     color: #EAEBF0;
     width: 247px;    
@@ -643,20 +648,22 @@ footer .F1 div:first-child p{
 footer .F1 .FCT1,footer .F1 .FCT2{    
     height: 180px;    
     color: #EAEBF0;
-    /* display: grid;
+    display: grid;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 }
 footer .F1 .FCT3 {
     color: #EAEBF0;
-    height: auto;
+    height: 170px;
     width: 302px;    
+    display: grid;
+    
 }
-footer .F1 .FCT3 div {       
+footer .F1 .FCT3 form {       
      display: flex;
      width: 302px;
 }
-footer .F1 .FCT3 div button {
+footer .F1 .FCT3 form button {
     color: #EAEBF0;
     font-size: 15px;
     font-weight: 600;
@@ -667,7 +674,7 @@ footer .F1 .FCT3 div button {
     border-bottom-right-radius: 10px;
     height: 46px;
 }
-footer .F1 .FCT3 div input {
+footer .F1 .FCT3 form input {
     height: 44px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -850,13 +857,3 @@ footer .F1 .FCT5 {
         
     }
 }
-
-
-
-
-
-
-
-
-
-
