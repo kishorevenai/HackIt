@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
 * {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 a {
     text-decoration: none; 
     color: black;  
     font-weight: 600;       
 }
+
 
 .Headers{    
     background-color: #ffffff;
@@ -73,7 +76,6 @@ a {
     }
 }
 
-
 @media screen and (min-width:1024px) and (max-width:1439px) {    
     .Header_Links {      
       width: 900px;
@@ -86,7 +88,8 @@ a {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px ) {
+
+@media screen and (min-width:320px) and (max-width:1023px ) {
     .Header_Links{
         display: flex;
         justify-content: center;   
@@ -136,6 +139,10 @@ a {
         background-color: #f05454;   
         border: 1px solid #EAEBF0; 
         gap: 20px;       
+    }
+    .Header_Links_Mob a{      
+        position: relative;                  
+        z-index: 999;        
     }
     .Hamburger{                     
         transition: 0.3s;
@@ -202,8 +209,6 @@ a {
         width: 30px;
         background-color: black;            
     }
-}
-@media screen and (max-width:426px)  {
     .Hamburger{
         transition: 0.3s;
         display: block;
@@ -222,17 +227,14 @@ a {
     .Header_Links_Mob.active{        
         width: 100%;        
     }
-}
-@media screen and (max-width:376px) {
     .Header_Links_Mob.active{
         width: 100%;
     }
 }
 
 
-
 /* ----------------------------------------Contact Us------------------------------------------------- */
-.Contact_Us {       
+.Contact_Us {           
     margin-top: 50px; 
     margin-bottom: 0;
     padding-bottom: 0;
@@ -257,11 +259,16 @@ a {
     align-items: center;    
 }
 
-@media screen and (max-width:1919px) and (min-width:1600px) {
+@media screen and (max-width:1919px) and (min-width:1600px) {    
     .Contact_Us .CUP1 {
+        width: 100%;
+        margin: auto;         
         display: flex;
         justify-content: center;
-    }       
+    }
+    .Contact_Us .CUP1 img {
+        width: 700px;
+    }
 }
 
 @media screen and (max-width:1441px) {
@@ -303,7 +310,7 @@ a {
         margin-left: 256px;
     }    
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:767px) and (min-width:375px) {
     .Contact_Us img {
         display: none;
     }
@@ -395,7 +402,7 @@ a {
         font-weight: 400;
     } */
 }
-@media screen and (max-width:426px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     .CViewPort {        
         height: 606px;        
         width: 343px;
@@ -480,22 +487,22 @@ a {
     }
     .Contact_Form .CForm_All img{
         width: 600px;
-    }    
+    }        
 }
 
-@media screen and (max-width:1599px) and (min-width:1440px) {
-    .Contact_Form .CForm_All{     
-        width: 100%;   
+@media screen and (max-width:1599px) and (min-width:1440px) {    
+    .Contact_Form .CForm_All {
+        display: flex;
         justify-content: center;
-        margin: auto;        
         gap: 20px;
+        width: 100%;
     }
     .Contact_Form .CForm_All img{
-        width: 550px;
-    }    
+        width: 500px;
+    }
 }
 
-@media screen and (min-width:768px) and (max-width:1439px)  {    
+@media screen and (min-width:768px) and (max-width:1439px) {    
     .Contact_Form .CForm_All {
         width: 100%;
     }
@@ -505,28 +512,42 @@ a {
     .Contact_Form .Form {
         margin: auto;
     }   
-}
-@media screen and (max-width:769px) {        
-    .Contact_Form .CForm_All {        
-        width: 706px;
-    }
-    .Contact_Form .Form {  
-        width: 100%;      
-    }
-    .Contact_Form .Form .PInfo input {
+    .Contact_Form .Form .PInfo input {        
         width: 270px;        
     }
 }
-@media screen and (max-width:426px) {        
-    .Contact_Form .CForm_All {        
-        width: 100%;
+/* @media screen and (min-width:768px) and (max-width:1023px) {     
+    
+    .Contact_Form .CForm_All {                
+        width: 706px;        
+    }
+    .Contact_Form .Form {          
+        width: 100%;      
+    }
+    .Contact_Form .Form .PInfo input {        
+        width: 270px;        
+    }
+} */
+@media screen and (min-width:375px) and (max-width:767px) {        
+    .Contact_Form {
+        width: 100%;        
+    }
+    .Contact_Form .CForm_All {
+        width: 90%;    
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact_Form .CForm_All img {
+        display: none;
     }
     .Contact_Form .Form {  
         border: none;
-        width: 100%;      
-    }
-    .Contact_Form .Form .PInfo input {
-        width: 343px;        
+        width: 100%;            
+        margin: auto;              
+    }    
+    .Contact_Form .Form .PInfo input {        
+        width: 100%;        
     }
     .Contact_Form .Form .PInfo {
         display: grid;
@@ -539,20 +560,6 @@ a {
         display: grid;
     }
 }
-@media screen and (max-width:376px) {
-    .Contact_Form .Form {          
-        border: none;
-        width: 290px;  
-        margin: auto;    
-    }
-    .Contact_Form .Form .PInfo input {
-        margin: auto;
-        width: 280px;     
-    }
-}
-
-
-
 /* ----------------------------Footer------------------------------------------------------------- */
 .Footer2
 {
