@@ -1105,7 +1105,7 @@ footer .F1 .FCT5 {
     
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:767px) and (min-width:375px) {
   footer .F1 .FCT1 p,footer .F1 .FCT2 p , footer .F1 .FCT3 p{
     color: white;
   }
@@ -1123,8 +1123,7 @@ footer .F1 .FCT5 {
         margin: auto;
     }
     .Footer2 .FooterCNT p{
-        color: #EAEBF0;
-        width: 343px;
+        color: #EAEBF0;        
     }
     .Footer2 .FCT {
         color: #EAEBF0;
@@ -1179,9 +1178,30 @@ footer .F1 .FCT5 {
         margin-top: 0;      
         grid-gap: 16px;        
     }
+    .Footer2 .FInner {
+      width: 330px ;
+      margin: auto;
+  }
+  .Footer2 .FInner .FooterCNT {        
+      width: 100%;
+  }
+  .Footer2 .FooterCNT p{
+      color: #EAEBF0;    
+  }
+  .Footer2 .FooterCNT p{
+      width: 300px;        
+      padding: 0;
+
+      margin-right: 0;
+  }
+  .Footer2 .F2 {
+      width: 300px;
+      margin: auto;
+      
+  }
     
 }
-@media screen and (max-width:376px) {
+/* @media screen and (max-width:376px) {
   
     .Footer2 .FInner {
         width: 330px ;
@@ -1205,4 +1225,4 @@ footer .F1 .FCT5 {
         
     }
     
-}
+} */
