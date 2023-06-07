@@ -479,22 +479,22 @@ a {
     }
     .Contact_Form .CForm_All img{
         width: 600px;
-    }    
+    }        
 }
 
-@media screen and (max-width:1599px) and (min-width:1440px) {
-    .Contact_Form .CForm_All{     
-        width: 100%;   
+@media screen and (max-width:1599px) and (min-width:1440px) {    
+    .Contact_Form .CForm_All {
+        display: flex;
         justify-content: center;
-        margin: auto;        
         gap: 20px;
+        width: 100%;
     }
     .Contact_Form .CForm_All img{
-        width: 550px;
-    }    
+        width: 500px;
+    }
 }
 
-@media screen and (min-width:768px) and (max-width:1439px)  {    
+@media screen and (min-width:768px) and (max-width:1439px) {    
     .Contact_Form .CForm_All {
         width: 100%;
     }
@@ -504,28 +504,30 @@ a {
     .Contact_Form .Form {
         margin: auto;
     }   
-}
-@media screen and (max-width:769px) {        
-    .Contact_Form .CForm_All {        
-        width: 706px;
-    }
-    .Contact_Form .Form {  
-        width: 100%;      
-    }
-    .Contact_Form .Form .PInfo input {
+    .Contact_Form .Form .PInfo input {        
         width: 270px;        
     }
 }
-@media screen and (max-width:426px) {        
-    .Contact_Form .CForm_All {        
-        width: 100%;
+@media screen and (min-width:375px) and (max-width:767px) {        
+    .Contact_Form {
+        width: 100%;        
+    }
+    .Contact_Form .CForm_All {
+        width: 90%;    
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact_Form .CForm_All img {
+        display: none;
     }
     .Contact_Form .Form {  
         border: none;
-        width: 100%;      
-    }
-    .Contact_Form .Form .PInfo input {
-        width: 343px;        
+        width: 100%;            
+        margin: auto;              
+    }    
+    .Contact_Form .Form .PInfo input {        
+        width: 100%;        
     }
     .Contact_Form .Form .PInfo {
         display: grid;
@@ -538,20 +540,6 @@ a {
         display: grid;
     }
 }
-@media screen and (max-width:376px) {
-    .Contact_Form .Form {          
-        border: none;
-        width: 290px;  
-        margin: auto;    
-    }
-    .Contact_Form .Form .PInfo input {
-        margin: auto;
-        width: 280px;     
-    }
-}
-
-
-
 /* ----------------------------Footer------------------------------------------------------------- */
 .Footer2
 {
