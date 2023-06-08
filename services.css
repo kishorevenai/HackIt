@@ -240,7 +240,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 162px;
 }
 .Home_Part1{    
   text-align: left;    
@@ -252,6 +252,7 @@ body{
   font-weight: 700;
   font-size: 52px;
   width: 624px;
+  line-height: 160%;
 }
 .Home_Part1 p{
   margin-bottom: 16px;    
@@ -291,21 +292,25 @@ body{
   .Home_Part{                   
       z-index: -50000;  
       display: grid;            
-      height: auto;             
+      height: auto;
+      margin-top: 90px;
   }         
   .Home_Part1 h2{   
       display: block;
+      margin: auto;
   }
   .Home_Part1 button{
       display: block;     
   }
   .Home_Part  img{        
-      left: 100px;        
-      position: relative;
+      margin-left: 213px;
       width: 500px;
   }
   .Home_Part1{          
       margin-left: 50px;                
+  }
+  .container_ser1 {
+     margin-top: 130px;
   }
 }
 
@@ -350,7 +355,7 @@ body{
 
 /* ----------------------Container_ser_1--------------------------------------------------------------------------------------------- */
 .container_ser1  {
-  margin-top: 204px;
+  margin-top: 130px;
 }
 .container_ser1 .container_tittel h1{
   text-align: center;
