@@ -291,7 +291,8 @@ body{
   .Home_Part{                   
       z-index: -50000;  
       display: grid;            
-      height: auto;             
+      height: auto;
+      margin-top: 90px;
   }         
   .Home_Part1 h2{   
       display: block;
