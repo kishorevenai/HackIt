@@ -15,6 +15,7 @@ a {
 
 
 .Headers{    
+    border-radius: 0 0 10px 10px;
     background-color: #ffffff;
    top: 0;
    position: sticky;
@@ -578,20 +579,37 @@ footer .F1 {
     justify-content: space-between;
     align-items: center;    
 }
+
+
+footer .F1 div:first-child{
+        height: 150px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
 footer .F1 div:first-child p{
     color: #EAEBF0;
     width: 247px;    
 }
 footer .F1 .FCT1,footer .F1 .FCT2{    
     height: 180px;    
-    color: #EAEBF0;
+    color: #EAEBF0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;   
     /* display: grid;
     justify-content: space-between;
     align-items: center; */
 }
 footer .F1 .FCT3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;   
     color: #EAEBF0;
-    height: auto;
+    height: 180px;
     width: 302px;    
 }
 footer .F1 .FCT3 div {       
@@ -699,7 +717,7 @@ footer .F1 .FCT5 {
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:767px) and (min-width:375px) {
     footer {
         display: none;
     }
@@ -710,8 +728,19 @@ footer .F1 .FCT5 {
     }
     .Footer2 .FInner{           
         width: 400px;
-        display: block;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin: auto;                
+        
+    }
+    .Footer2 .FooterCNT { 
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 134px;
     }
     .Footer2 .FooterCNT p{
         color: #EAEBF0;
@@ -722,12 +751,27 @@ footer .F1 .FCT5 {
         width: 272px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;        
+        height: 160px;
+        margin: 30px 0 30px 0;
+        /* background-color: #EAEBF0;   */
+    }
+    .Footer2 .FCT .FCT1,.Footer2 .FCT .FCT2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;        
+        height: 100%;
     }  
     .Footer2    .FCT3 {
         color: #EAEBF0;
         height: auto;
         width: 302px;    
+        height: 134px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;        
     }
     .Footer2    .FCT3 div{       
          display: flex;
@@ -744,7 +788,7 @@ footer .F1 .FCT5 {
         border-bottom-right-radius: 10px;
         height: 46px;
     }
-    .Footer2    .FCT3 div input {
+    .Footer2 .FCT3 div input {
         height: 44px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
@@ -789,7 +833,6 @@ footer .F1 .FCT5 {
     .Footer2 .F2 {
         width: 300px;
         margin: auto;
-        
     }
 }
 /* @media screen and (max-width:376px) {

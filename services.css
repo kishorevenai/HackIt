@@ -21,6 +21,7 @@ body{
  justify-content: space-between;
  align-items: center;  
  height: 80px;
+ border-radius: 0 0 10px 10px;
 }
 .Header_Links{        
   display: flex;
@@ -311,7 +312,7 @@ body{
 @media screen and (max-width:767px) and (min-width:375px){
   .Home_Part {        
       height: auto;        
-      margin-top: 40px;        
+      margin-top: 40px; 
   }
   .Home_Part img{
     display: none;
@@ -766,6 +767,7 @@ body{
 .Footer2
 {
     display: none;
+    background-color: #8b8a8a;
 }
 footer {
     margin-top: 117px;

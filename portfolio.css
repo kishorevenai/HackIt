@@ -16,6 +16,7 @@ body p {
   margin-top: 0px;
 }
 .Headers{    
+
   background-color: #ffffff;
  top: 0;
  position: sticky;
@@ -23,6 +24,7 @@ body p {
  justify-content: space-between;
  align-items: center;  
  height: 80px;
+ border-radius: 0 0 10px 10px;
 }
 .Header_Links{        
   display: flex;
@@ -949,6 +951,7 @@ body p {
 .Footer2
 {
     display: none;
+    background-color: #8b8a8a;
 }
 footer {
     margin-top: 117px;

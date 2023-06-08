@@ -12,7 +12,8 @@ a {
     font-weight: 600;    
 }
 
-.Headers{    
+.Headers{   
+    border-radius: 0 0 10px 10px; 
     background-color: #ffffff;
    top: 0;
    position: sticky;
@@ -520,7 +521,7 @@ a {
   }
 
   @media screen and (max-width: 1025px) {
-    .banner_port {
+    /* .banner_port {
       width: 100%;
       align-items: center;
     }
@@ -544,7 +545,7 @@ a {
     }
     .port_icons2 img {
       width: 200px;
-    }
+    } */
   }
   @media screen and (min-width: 375px) and (max-width:1023px) {
     .port_container1 {
@@ -793,7 +794,7 @@ footer .F1 .FCT5 {
         width: 272px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;        
     }  
     .Footer2    .FCT3 {
         color: #EAEBF0;

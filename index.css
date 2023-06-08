@@ -7,6 +7,9 @@ a {
     color: black;
     font-weight: 600;    
 }
+button {
+    cursor: pointer;
+}
 
 body{    
     margin: 0;
@@ -15,7 +18,7 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.Headers{     
+.Headers{        
     background-color: white;
    top: 0;
    position: sticky;
@@ -23,7 +26,8 @@ body{
    justify-content: space-between;
    align-items: center;  
    height: 80px;
-   z-index: 99999;
+   z-index: 99999;   
+   border-radius: 0 0 10px 10px;
 }
 .Header_Links{        
     display: flex;
@@ -229,9 +233,7 @@ body{
     .Header_Links_Mob.active{        
         width: 100%;        
     }
-    .Header_Links_Mob.active{
-        width: 100%;
-    }
+   
 }
 /* @media screen and (min-width:375px) and (max-width:767px)  {
     .Hamburger{
@@ -303,6 +305,7 @@ body{
     margin-top: 18px;
 }
 .Home_Part1 button{
+    transition: 0.5s;
     margin: auto;
     margin-top: 48px;
     color:#f05454;
@@ -313,6 +316,9 @@ body{
     background-color: #ffffff;
     border: none;
     border-radius: 6px;
+}
+.Home_Part1 button:hover {
+    background-color: #424242;
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
@@ -333,10 +339,10 @@ body{
     }
 }
 @media screen and (min-width:769px) and (max-width:1023px)  {     
-    .Home_Part{                   
-        z-index: -50000;  
+    .Home_Part{                           
+        /* z-index: -50000;   */
         display: grid;            
-        height: auto;             
+        height: 100vh;             
     }         
     .Home_Part1 h2{   
         display: block;
@@ -351,6 +357,9 @@ body{
     }
     .Home_Part1{          
         margin-left: 50px;                
+    }
+    .Home_Part .ThemeVideo{
+        object-fit: cover;
     }
 }
 
@@ -496,7 +505,8 @@ body{
     padding-bottom: 24px;    
 }
 
-.Why_Hackit_boxe3 {       
+.Why_Hackit_boxe3 { 
+    height: 400px;      
     transition: 0.3s;    
     display: flex; 
     justify-content: center;
@@ -529,7 +539,7 @@ body{
 
 .Why_Hackit_boxe3 .box:hover {    
     transition: 0.5s;
-    height: 400px;
+    height: 400px;    
 }
 
 .Why_Hackit_boxe3 div:hover .line {   
@@ -541,16 +551,58 @@ body{
 
 
 .Why_Hackit_boxe3 div .desc {
-    margin-top: 100px;
+    margin-top: 50px;
     line-height: 30px;
 }
 
 .Why_Hackit_boxe3 div img {
     width: 68px;
 }
-
+@media screen and (max-width:1919px) and (min-width:1600px) {
+    .Why_Hackit_boxe3 {        
+        width: 1570px;        
+    }    
+}
+@media screen and (max-width:1599px) and (min-width:1440px) {
+    .Why_Hackit_boxe3 {        
+        width: 1400px;
+    }    
+}
+@media screen and (max-width:1439px) and (min-width:1024px) {
+    .Why_Hackit_boxe3 {
+        width: 900px;        
+        display: grid;
+        height: auto;        
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+    .Why_Hackit_boxe3 .box:hover {        
+        height: 410px;
+    }
+    .Why_Hackit_boxe3 .box {              
+        height: 410px;
+        
+    }
+}
+@media screen and (max-width:1023px) and (min-width:769px) {
+    .Why_Hackit_boxe3 {
+        width: 760px;        
+        display: grid;
+        height: auto;        
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+    .Why_Hackit_boxe3 .box:hover {        
+        height: 450px;
+    }
+    .Why_Hackit_boxe3 .box {              
+        height: 450px;
+        
+    }
+}
 @media screen and (max-width:768px) and (min-width:375px) {
         .Why_Hackit_boxe3 {
+            height: auto;
             width: fit-content;
             margin: auto;
             /* display: flex;  
@@ -1440,6 +1492,7 @@ body{
     color: #437EF7;
 }
 .Services .SseeMore{
+    transition: 0.5s;
     /* margin: 8px 95px 0 0;    
     float: right;
     width: 137px;
@@ -1465,6 +1518,9 @@ body{
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;    
+}
+.Services .SseeMore:hover {
+    background-color: #30475E;
 }
 
 @media screen and (max-width:1919px) and (min-width:1600px) {
@@ -2299,7 +2355,7 @@ body{
     }
     .Contact_Form .CForm_All .Form .Button{       
     }
-    .Contact_Form .CForm_All img {
+    .Contact_Form .CForm_All .vector1 {
         display: none;
     } 
     .Contact_Form .Form {        
@@ -2311,6 +2367,7 @@ body{
     }
 }
 @media screen and (min-width:768px) and (max-width:1023px){
+    
     .Contact_Form .CForm_All .Form .PInfo input {
         width: 150px;
     }
@@ -2329,7 +2386,7 @@ body{
 
 @media screen and (min-width:375px) and (max-width:767px) {        
     .Contact_Form {        
-        width: 100%;            
+        width: 100%;           
     }
     .Contact_Form .CForm_All {        
         width: 90%;    
@@ -2337,16 +2394,20 @@ body{
         justify-content: center;
         align-items: center;
     }
-    .Contact_Form .CForm_All img {
+    .Contact_Form .CForm_All .vector1 {
         display: none;
+    }
+    .Contact_Form .CForm_All label {
+        margin-bottom: 10px;
     }
     .Contact_Form .Form {          
         border: none;
         width: 300px;    
-        margin: auto;              
+        margin: auto;   
+        height: 600px;        
     }
-    .Contact_Form .Form .PInfo input {        
-        width: 100%;
+    .Contact_Form .Form .PInfo input {                
+        width: 280px;
         margin: auto;
     }
     .Contact_Form .Form .PInfo {      
@@ -2355,11 +2416,12 @@ body{
         grid-template-columns: 1fr;
     }
     .Contact_Form .Form  textarea {
-        height: 143px;
+        height: 100px;
     }
     .Contact_Form .Form .Button {
         width: 300px;        
         display: grid;
+        height: 300px;
     }
 }
 @media screen and (max-width:376px) {
@@ -2377,13 +2439,15 @@ body{
 
 /* ----------------------------Footer------------------------------------------------------------- */
 .Footer2
-{
+{    
     display: none;
+    background-color: #8b8a8a;
 }
 footer {
+    
     margin-top: 117px;
     padding-top: 58px;
-    background-color: #696969;
+    background-color: #8b8a8a;
 }
 footer .F1 {
     margin: auto;
@@ -2524,7 +2588,7 @@ footer .F1 .FCT5 {
     .Footer2{                
         display: grid;        
         place-items: center;
-
+        background-color: #8b8a8a;
     }
     .Footer2 .FInner{           
         width: 400px;
