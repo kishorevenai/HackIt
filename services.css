@@ -302,8 +302,7 @@ body{
       display: block;     
   }
   .Home_Part  img{        
-      left: 213px;        
-      position: relative;
+      margin-left: 213px;
       width: 500px;
   }
   .Home_Part1{          
