@@ -82,7 +82,7 @@ body{
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1439px) {    
+@media screen and (min-width:1025px) and (max-width:1439px) {    
     .Header_Links {      
       width: 900px;
       margin-right: 20px;   
@@ -93,9 +93,7 @@ body{
       flex-grow: 3;
     }
 }
-
-
-@media screen and (min-width:320px) and (max-width:1023px ) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .Header_Links{
         display: flex;
         justify-content: center;   
@@ -233,7 +231,149 @@ body{
     .Header_Links_Mob.active{        
         width: 100%;        
     }
-   
+    .Header_Links_Mob.active{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:768px) {
+    .Header_Links{
+        display: flex;
+        justify-content: center;   
+        gap: 40px;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .Logo_favicon{
+        margin-left: 50px;
+    }
+    .Header_Links{
+        display: none;
+    }
+    .Header_Links_Mob{    
+        z-index: 1000000px;          
+        transition: 0.5s;   
+        border-top-right-radius: 20px;        
+        border-bottom-right-radius: 20px;
+        transform: translateX(-100%);
+        height: 300px;
+        color: white;        
+        width: 500px;
+        top: 80px;        
+        position: absolute;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f05454;   
+        gap: 20px;     
+    }
+    .Header_Links_Mob.active{
+        z-index: -1000000;
+        transition: 0.5s;   
+        border-top-right-radius: 20px;        
+        border-bottom-right-radius: 20px;                
+        transform: translateX(0px);
+        height: 300px;
+        color: white;        
+        width: 500px;
+        top: 80px;        
+        position: absolute;
+        display: flex;        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: #f05454;        */
+        border: 1px solid #EAEBF0; 
+        gap: 20px;       
+    }
+    .Header_Links_Mob a{      
+        position: relative;                  
+        z-index: 999;        
+    }
+    .Hamburger{                     
+        transition: 0.3s;
+        display: block;
+        position: relative;        
+        margin-right: 70px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;        
+    }
+    .Hamburger::before{          
+        transition: 0.3s;      
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        left: 0px;
+        position: absolute;
+        content:' ';
+        top: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger::after{        
+        transition: 0.3s;
+        left: 0px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: absolute;
+        content:' ';
+        bottom: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger.active{        
+        display: block;
+        position: relative;
+        margin-right: 70px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;                
+    }
+    .Hamburger.active::before{           
+        transition: 0.3s;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: absolute;        
+        left: -10px;
+        content:' ';
+        top: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger.active::after{        
+        transition: 0.3s;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: absolute;
+        left: 10px;
+        content:' ';        
+        bottom: 8px;
+        height: 5px;
+        width: 30px;
+        background-color: black;            
+    }
+    .Hamburger{
+        transition: 0.3s;
+        display: block;
+        position: relative;
+        margin-right: 30px;
+        height: 5px;
+        width: 30px;        
+        background-color: #f05454;        
+    }
+    .Hamburger.active{
+        margin-right: 30px;
+    }
+    .Logo_favicon{
+        margin-left: 30px;
+    }
+    .Header_Links_Mob.active{        
+        width: 70%;        
+    }    
 }
 /* @media screen and (min-width:375px) and (max-width:767px)  {
     .Hamburger{

@@ -229,11 +229,9 @@ body {
       margin-left: 30px;
   }
   .Header_Links_Mob.active{        
-      width: 100%;        
+      width: 70%;        
   }
-  .Header_Links_Mob.active{
-      width: 100%;
-  }
+ 
 }
 /* p {
   color: #4e4e4e;

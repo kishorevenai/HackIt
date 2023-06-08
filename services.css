@@ -225,11 +225,8 @@ body{
       margin-left: 30px;
   }
   .Header_Links_Mob.active{        
-      width: 100%;        
-  }
-  .Header_Links_Mob.active{
-      width: 100%;
-  }
+      width: 70%;        
+  }  
 }
 
 
