@@ -296,6 +296,7 @@ body{
   }         
   .Home_Part1 h2{   
       display: block;
+      margin: auto;
   }
   .Home_Part1 button{
       display: block;     
