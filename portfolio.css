@@ -764,6 +764,9 @@ body p {
     cursor: pointer;
     margin-top: 100px;
  }
+button p{
+  color: #437EF7;
+}
  .Our_Customers_Logo button p {
     margin: 0   ;
  }
