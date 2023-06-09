@@ -2401,6 +2401,7 @@ body{
     border: 1px solid #DAE0E6;
     padding-left: 16px  ;
     font-family: "Plus Jakarta Sans", sans-serif;
+    outline: none;
 }
 .Contact_Form .Form  textarea {      
     padding: 12px 16px 12px 12px;  
@@ -2410,6 +2411,7 @@ body{
     border: 0.5px solid #DAE0E6;    
     resize: vertical;
     font-family: "Plus Jakarta Sans", sans-serif;
+    outline: none;
 }
 .Contact_Form .Form .Button {    
     display: flex;    
