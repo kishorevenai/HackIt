@@ -722,7 +722,7 @@ body{
         
     }
 }
-@media screen and (max-width:1023px) and (min-width:769px) {
+@media screen and (max-width:1023px) and (min-width:768px) {
     .Why_Hackit_boxe3 {
         width: 760px;        
         display: grid;
@@ -738,7 +738,7 @@ body{
         
     }
 }
-@media screen and (max-width:768px) and (min-width:375px) {
+@media screen and (max-width:767px) and (min-width:375px) {
         .Why_Hackit_boxe3 {
             height: auto;
             width: fit-content;

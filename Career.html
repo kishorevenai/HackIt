@@ -12,25 +12,32 @@
   <body>
     <div class="Home_Page">
       <header class="Headers">
-          <img src="./assets/favicon.png" class="Logo_favicon" width="136px">
-          <nav class="Header_Links">
-            <a href="./index.html">Home</a>
-            <a href="./services.html">Our Services</a>
-            <a href="./portfolio.html">Portifolio and Skillset</a>
-            <a href="./company.html">Company</a>
-            <a href="./contactUs.html">Contact us</a>
-            <a href="./Career.html">Career</a>
-          </nav>
-          <div class="Hamburger"></div>
-          <nav class="Header_Links_Mob">
-            <a href="./index.html">Home</a>
-            <a href="./services.html">Our Services</a>
-            <a href="./portfolio.html">Portifolio and Skillset</a>
-            <a href="./company.html">Company</a>
-            <a href="./contactUs.html">Contact us</a>
-            <a href="./Career.html">Career</a>
-          </nav>
+        <a href="./index.html"
+          ><img
+            src="./assets/favicon.png"
+            class="Logo_favicon"
+            width="136px"
+            alt="logo"
+        /></a>
+        <nav class="Header_Links">
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Our Services</a>
+          <a href="./portfolio.html">Portifolio and Skillset</a>
+          <a href="./company.html">Company</a>
+          <a href="./contactUs.html">Contact us</a>
+          <a href="./Career.html">Career</a>
+        </nav>
+        <div class="Hamburger"></div>
+        <nav class="Header_Links_Mob">
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Our Services</a>
+          <a href="./portfolio.html">Portifolio and Skillset</a>
+          <a href="./company.html">Company</a>
+          <a href="./contactUs.html">Contact us</a>
+          <a href="./Career.html">Career</a>
+        </nav>
       </header>
+
     <div class="career_banner">
       <div class="career_head">
         <h1>Join Team HackIt!!</h1>
@@ -125,9 +132,8 @@
         </div>
       </div>
       <div class="Slider">
-        <img src="./assets/career/Left.png" id="backbtn">
-        <div class="slider_inner">
-          
+        <img src="./assets/career/Left.png" id="backbtn" class="leftArrow">
+        <div class="slider_inner">          
           <div class="slider_arrow">
             <div>
               <img src="./assets/career/MicrosoftTeams-image (22).png" alt="" />
@@ -148,15 +154,15 @@
             <div>
               <img src="./assets/career/MicrosoftTeams-image (23).png" alt="" />
               <p>Consistent Schedule Pay</p>
-            </div>
-            
+            </div>            
           </div>
         </div>
-        <img src="./assets/career/Right.png" id="nextbtn">
+        <img src="./assets/career/Right.png" id="nextbtn" class="rightArrow">
       </div>
     </div>
     <div class="career_head5">
       <h1>Open Position</h1>
+     <div class="position_Outer">
       <div class="postion_inner">
         <div class="postion_det">
           <h1>Business Development Manager</h1>
@@ -171,11 +177,14 @@
           </div>
         </div>
         <div class="inner_btn">
-          <button id="myButton" onclick={handleClick} class="pos_btn btn_1">ApplyNow</button>
-          <button class="pos_btn btn_2">Job Description</button>
-          <img src="./image/Icon.png" alt="" />
+          <button id="myButton" class="pos_btn btn_1">ApplyNow</button>
+          <button class="pos_btn btn_2" data-status="true" id="1">Job Description</button>
+          <img src="./assets/career/Icon.png" alt="" />          
         </div>
       </div>
+      <div class="Description" id="1"><p>We are looking tofill Project Leaqd position for product  mitigation assignment. Project position for product migration assignment will be remote and require no travel. The Project Lead will act as a primary contact to external customers (Physicians and Hospitals) while working closely with cross-functional teams to manage product migration tasks.</p></div>
+    </div>
+    <div class="position_Outer">
       <div class="postion_inner">
         <div class="postion_det">
           <h1>Project Manager</h1>
@@ -191,10 +200,13 @@
         </div>
         <div class="inner_btn">
           <button class="pos_btn btn_1">ApplyNow</button>
-          <button class="pos_btn btn_2">Job Description</button>
-          <img src="./image/Icon.png" alt="" />
+          <button class="pos_btn btn_2" data-status="true" id="2">Job Description</button>
+          <img src="./assets/career/Icon.png" alt="" />
         </div>
-      </div>
+      </div> 
+      <div class="Description" id="2"><p>We are looking tofill Project Leaqd position for product  mitigation assignment. Project position for product migration assignment will be remote and require no travel. The Project Lead will act as a primary contact to external customers (Physicians and Hospitals) while working closely with cross-functional teams to manage product migration tasks.</p></div> 
+    </div>    
+    <div class="position_Outer">
       <div class="postion_inner">
         <div class="postion_det">
           <h1>HR Executive</h1>
@@ -210,10 +222,13 @@
         </div>
         <div class="inner_btn">
           <button class="pos_btn btn_1">ApplyNow</button>
-          <button class="pos_btn btn_2">Job Description</button>
-          <img src="./image/Icon.png" alt="" />
+          <button class="pos_btn btn_2" data-status="true" id="3">Job Description</button>
+          <img src="./assets/career/Icon.png" alt="" />
         </div>
       </div>
+      <div class="Description" id="3"><p>We are looking tofill Project Leaqd position for product  mitigation assignment. Project position for product migration assignment will be remote and require no travel. The Project Lead will act as a primary contact to external customers (Physicians and Hospitals) while working closely with cross-functional teams to manage product migration tasks.</p></div>
+    </div>
+    <div class="position_Outer">
       <div class="postion_inner">
         <div class="postion_det">
           <h1>Security Analyst</h1>
@@ -229,10 +244,13 @@
         </div>
         <div class="inner_btn">
           <button class="pos_btn btn_1">ApplyNow</button>
-          <button class="pos_btn btn_2">Job Description</button>
-          <img src="./image/Icon.png" alt="" />
+          <button class="pos_btn btn_2" data-status="true" id="4">Job Description</button>
+          <img src="./assets/career/Icon.png" alt="" />
         </div>
       </div>
+      <div class="Description" id="4"><p>We are looking tofill Project Leaqd position for product  mitigation assignment. Project position for product migration assignment will be remote and require no travel. The Project Lead will act as a primary contact to external customers (Physicians and Hospitals) while working closely with cross-functional teams to manage product migration tasks.</p></div>
+    </div>
+    <div class="position_Outer">
       <div class="postion_inner">
         <div class="postion_det">
           <h1>Senior Security Analyst</h1>
@@ -248,11 +266,13 @@
         </div>
         <div class="inner_btn">
           <button class="pos_btn btn_1">ApplyNow</button>
-          <button class="pos_btn btn_2">Job Description</button>
-          <img src="./image/Icon.png" alt="" />
+          <button class="pos_btn btn_2" data-status="true" id="5">Job Description</button>          
+          <img src="./assets/career/Icon.png" alt="" />
         </div>
       </div>
-    </div>
+      <div class="Description" id="5"><p>We are looking tofill Project Leaqd position for product  mitigation assignment. Project position for product migration assignment will be remote and require no travel. The Project Lead will act as a primary contact to external customers (Physicians and Hospitals) while working closely with cross-functional teams to manage product migration tasks.</p></div>
+    </div>  
+    </div>     
     <footer>
       <div class="F1">
           <div>
