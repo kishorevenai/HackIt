@@ -540,6 +540,9 @@ a {
         width: 1900px;
         margin: auto;
        }
+      .port_icons2 img{
+        width: 216px;
+      }
   }
 
   @media screen and (min-width: 375px) and (max-width:1024px) {
