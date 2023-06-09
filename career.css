@@ -859,13 +859,15 @@ h1 {
     align-items: center;
     height: 100%;
   }
+  .slider_inner {
+    overflow: hidden;
+  }
   .slider_arrow {
     transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: start;    
-    width: 321px;
-    overflow: hidden;
+    width: 321px;    
     margin: auto;
     gap: 43px;
   }

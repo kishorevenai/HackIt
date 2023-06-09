@@ -33,11 +33,20 @@ const leftArrow = document.querySelector('.leftArrow')
 const rightArrow = document.querySelector('.rightArrow')
 const slider_arrow = document.querySelector('.slider_arrow')
 
-leftArrow.addEventListener('click', () => {
-   slider_arrow.style.transform = "translateX(-200px)"
+let value = 0;
+let changer = 180
+leftArrow.addEventListener('click', () => {   
+   if(value < 0){
+      value += changer;
+      slider_arrow.style.transform = `translateX(${value}px)`
+   }
+   console.log(value)
 })
-rightArrow.addEventListener('click', () => {
-   slider_arrow.style.transform = "translateX(200px)"
+rightArrow.addEventListener('click', () => {   
+   if(value > -540) {      
+      value -= changer
+      slider_arrow.style.transform = `translateX(${value}px )`
+   }
 })
 
 // ---------------------------Dark mode------------------------------------
