@@ -6,8 +6,6 @@ const leftArrow = document.querySelector('.leftArrow')
 const rightArrow = document.querySelector('.rightArrow')
 const BASE_URL = 'http://localhost:5000'
 const button = document.querySelectorAll('button')
-// const footerSubmit = document.querySelectorAll('.footerSubmit')
-// const FooterEmail = document.querySelector('.FooterEmail')
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
