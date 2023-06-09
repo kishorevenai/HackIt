@@ -2423,7 +2423,7 @@ body{
     width: fit-content;     
 }
 .Contact_Form .Form .Button .RobotCheck {
-    border: 1px solid rgba(0, 0, 0, 0.466);
+    border: 0.5px solid #DAE0E6;
     border-radius: 8px;
     padding: 0 10px 0 10px;
 }
